@@ -1,0 +1,57 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\albert\Documents\Quartus_workspace\testing_reg\simulation\modelsim
+Etesting_reg
+Z1 w1341881746
+Z2 DPx4 ieee 16 vital_primitives 0 22 E9g6AWKAc2T]enMfl94If3
+Z3 DPx9 cycloneii 19 cycloneii_atom_pack 0 22 X17_4[i>oU4:dHDSQ]jm93
+Z4 DPx4 ieee 12 vital_timing 0 22 OBWK>;kUYmkG<OChK2lhV1
+Z5 DPx4 ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
+Z6 DPx9 cycloneii 20 cycloneii_components 0 22 >L0Jam:>Q6n`?5C3czKRE2
+Z7 8testing_reg.vho
+Z8 Ftesting_reg.vho
+l0
+L34
+VhAI;QczamMS@4O1Mo7]g@0
+Z9 OV;C;6.5e;42
+31
+Z10 o-93 -work work -O0
+Z11 tExplicit 1
+!s100 LUXOif[m<KY>FZUaJf:eD0
+Astructure
+R2
+R3
+R4
+R5
+R6
+DEx4 work 11 testing_reg 0 22 hAI;QczamMS@4O1Mo7]g@0
+l96
+L62
+VfT9<oT]W_WBNDlYo=BF=U2
+R9
+31
+Mx5 9 cycloneii 20 cycloneii_components
+Mx4 4 ieee 14 std_logic_1164
+Mx3 4 ieee 12 vital_timing
+Mx2 9 cycloneii 19 cycloneii_atom_pack
+Mx1 4 ieee 16 vital_primitives
+R10
+R11
+!s100 J6JMLz=9IZdQ;6KD`M31M1
+vtesting_reg_tb
+!s100 Ha5]5Vm96O<:_fl1>bjdd2
+I[I]R=Uc4<l>298[m@Kf`^2
+VejW`Kd<R]coOVQ]CXF5TA0
+w1341881713
+8C:/Users/albert/Documents/Quartus_workspace/testing_reg/testing_reg_tb.v
+FC:/Users/albert/Documents/Quartus_workspace/testing_reg/testing_reg_tb.v
+L0 4
+OV;L;6.5e;42
+r1
+!s85 0
+31
+!s101 -O0
+o-vlog01compat -work work -O0
+!s92 -vlog01compat -work work +incdir+C:/Users/albert/Documents/Quartus_workspace/testing_reg -O0

@@ -1,0 +1,65 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\albert\Documents\Quartus_workspace\nand_write\simulation\modelsim
+vnand_write
+Ibg@FAMBlH9b4ZgT5>KR@B0
+V@R_2Q=6[nT20Q4GE2VX7?1
+w1338269509
+8C:/Users/albert/Documents/Quartus_workspace/nand_write/nand_write.v
+FC:/Users/albert/Documents/Quartus_workspace/nand_write/nand_write.v
+L0 12
+Z1 OV;L;6.5e;42
+r1
+31
+Z2 o-vlog01compat -work work -O0
+Z3 !s92 -vlog01compat -work work +incdir+C:/Users/albert/Documents/Quartus_workspace/nand_write -O0
+!s100 T2ngKFNDY4liG`@?z7dR:2
+!s85 0
+!s101 -O0
+vnand_write_tb
+!s100 edHf;_9mj:51he4ecFJ0D2
+I2?GbCWN<gmgBImFfIcehY0
+V:`@;j=^Y>WH60Fk;d?0B^2
+w1337579996
+8C:/Users/albert/Documents/Quartus_workspace/nand_write/nand_write_tb.v
+FC:/Users/albert/Documents/Quartus_workspace/nand_write/nand_write_tb.v
+L0 15
+R1
+r1
+!s85 0
+31
+!s101 -O0
+R2
+R3
+vpll
+IOH5S07bdb1^326DfjKWQP0
+V[PnaR_FLzVi3KU;W^`bE_1
+w1338266502
+8C:/Users/albert/Documents/Quartus_workspace/nand_write/pll.v
+FC:/Users/albert/Documents/Quartus_workspace/nand_write/pll.v
+L0 39
+R1
+r1
+31
+R2
+R3
+!s100 9NR<@Adl^5hC_]JY6E>JS2
+!s85 0
+!s101 -O0
+vtoggle
+ICSa9>H1DWC7;EM1XYCR@[2
+Vm>>j`@ZPG1a1=P<Hnc^EO1
+w1338268578
+8C:/Users/albert/Documents/Quartus_workspace/nand_write/toggle.v
+FC:/Users/albert/Documents/Quartus_workspace/nand_write/toggle.v
+L0 14
+R1
+r1
+31
+R2
+R3
+!s100 cPP;[iUEL9`GVj`0XZ0Ga1
+!s85 0
+!s101 -O0

@@ -1,0 +1,22 @@
+|testing_reg
+clk => seq_reg.CLK
+clk => state_reg~1.DATAIN
+reset => seq_reg.ACLR
+reset => state_reg~3.DATAIN
+a => state_next.OUTPUTSELECT
+a => state_next.OUTPUTSELECT
+a => testing_reg1.DATAB
+a => testing_reg2.DATAB
+a => seq_next.DATAB
+b => state_next.OUTPUTSELECT
+b => state_next.OUTPUTSELECT
+b => testing_reg2.DATAA
+c <= testing_reg1.DB_MAX_OUTPUT_PORT_TYPE
+seq_reg_tb <= seq_reg.DB_MAX_OUTPUT_PORT_TYPE
+seq_next_tb <= seq_next.DB_MAX_OUTPUT_PORT_TYPE
+state_tb[0] <= state_tb[0].DB_MAX_OUTPUT_PORT_TYPE
+state_tb[1] <= <GND>
+testing_reg2_tb[0] <= testing_reg2.DB_MAX_OUTPUT_PORT_TYPE
+testing_reg2_tb[1] <= testing_reg2.DB_MAX_OUTPUT_PORT_TYPE
+
+

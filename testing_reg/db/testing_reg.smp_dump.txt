@@ -1,0 +1,5 @@
+
+State Machine - |testing_reg|state_reg
+Name state_reg.toggle1 
+state_reg.toggleWAIT 0 
+state_reg.toggle1 1 

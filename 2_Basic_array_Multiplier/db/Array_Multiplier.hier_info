@@ -1,0 +1,2155 @@
+|Arrary_Mutiplier
+M[0] => M[0].IN8
+M[1] => M[1].IN8
+M[2] => M[2].IN8
+M[3] => M[3].IN8
+M[4] => M[4].IN8
+M[5] => M[5].IN8
+M[6] => M[6].IN8
+M[7] => M[7].IN8
+Q[0] => Q[0].IN1
+Q[1] => Q[1].IN1
+Q[2] => Q[2].IN1
+Q[3] => Q[3].IN1
+Q[4] => Q[4].IN1
+Q[5] => Q[5].IN1
+Q[6] => Q[6].IN1
+Q[7] => Q[7].IN1
+
+
+|Arrary_Mutiplier|booth_encode:BE
+Q[0] => plus.IN0
+Q[0] => minus.IN0
+Q[0] => minus[0].DATAIN
+Q[1] => minus.IN1
+Q[1] => plus.IN0
+Q[1] => plus.IN1
+Q[1] => minus.IN0
+Q[2] => minus.IN1
+Q[2] => plus.IN0
+Q[2] => plus.IN1
+Q[2] => minus.IN0
+Q[3] => minus.IN1
+Q[3] => plus.IN0
+Q[3] => plus.IN1
+Q[3] => minus.IN0
+Q[4] => minus.IN1
+Q[4] => plus.IN0
+Q[4] => plus.IN1
+Q[4] => minus.IN0
+Q[5] => minus.IN1
+Q[5] => plus.IN0
+Q[5] => plus.IN1
+Q[5] => minus.IN0
+Q[6] => minus.IN1
+Q[6] => plus.IN0
+Q[6] => plus.IN1
+Q[6] => minus.IN0
+Q[7] => minus.IN1
+Q[7] => plus.IN1
+
+
+|Arrary_Mutiplier|add_input:row_1
+M[0] => C.IN0
+M[0] => C.IN0
+M[1] => C.IN0
+M[1] => C.IN0
+M[2] => C.IN0
+M[2] => C.IN0
+M[3] => C.IN0
+M[3] => C.IN0
+M[4] => C.IN0
+M[4] => C.IN0
+M[5] => C.IN0
+M[5] => C.IN0
+M[6] => C.IN0
+M[6] => C.IN0
+M[7] => C.IN0
+M[7] => C.IN0
+pos => C.IN1
+pos => C.IN1
+pos => C.IN1
+pos => C.IN1
+pos => C.IN1
+pos => C.IN1
+pos => C.IN1
+pos => C.IN1
+neg => C.IN1
+neg => C.IN1
+neg => C.IN1
+neg => C.IN1
+neg => C.IN1
+neg => C.IN1
+neg => C.IN1
+neg => C.IN1
+
+
+|Arrary_Mutiplier|add_input:row_2
+M[0] => C.IN0
+M[0] => C.IN0
+M[1] => C.IN0
+M[1] => C.IN0
+M[2] => C.IN0
+M[2] => C.IN0
+M[3] => C.IN0
+M[3] => C.IN0
+M[4] => C.IN0
+M[4] => C.IN0
+M[5] => C.IN0
+M[5] => C.IN0
+M[6] => C.IN0
+M[6] => C.IN0
+M[7] => C.IN0
+M[7] => C.IN0
+pos => C.IN1
+pos => C.IN1
+pos => C.IN1
+pos => C.IN1
+pos => C.IN1
+pos => C.IN1
+pos => C.IN1
+pos => C.IN1
+neg => C.IN1
+neg => C.IN1
+neg => C.IN1
+neg => C.IN1
+neg => C.IN1
+neg => C.IN1
+neg => C.IN1
+neg => C.IN1
+
+
+|Arrary_Mutiplier|add_input:row_3
+M[0] => C.IN0
+M[0] => C.IN0
+M[1] => C.IN0
+M[1] => C.IN0
+M[2] => C.IN0
+M[2] => C.IN0
+M[3] => C.IN0
+M[3] => C.IN0
+M[4] => C.IN0
+M[4] => C.IN0
+M[5] => C.IN0
+M[5] => C.IN0
+M[6] => C.IN0
+M[6] => C.IN0
+M[7] => C.IN0
+M[7] => C.IN0
+pos => C.IN1
+pos => C.IN1
+pos => C.IN1
+pos => C.IN1
+pos => C.IN1
+pos => C.IN1
+pos => C.IN1
+pos => C.IN1
+neg => C.IN1
+neg => C.IN1
+neg => C.IN1
+neg => C.IN1
+neg => C.IN1
+neg => C.IN1
+neg => C.IN1
+neg => C.IN1
+
+
+|Arrary_Mutiplier|add_input:row_4
+M[0] => C.IN0
+M[0] => C.IN0
+M[1] => C.IN0
+M[1] => C.IN0
+M[2] => C.IN0
+M[2] => C.IN0
+M[3] => C.IN0
+M[3] => C.IN0
+M[4] => C.IN0
+M[4] => C.IN0
+M[5] => C.IN0
+M[5] => C.IN0
+M[6] => C.IN0
+M[6] => C.IN0
+M[7] => C.IN0
+M[7] => C.IN0
+pos => C.IN1
+pos => C.IN1
+pos => C.IN1
+pos => C.IN1
+pos => C.IN1
+pos => C.IN1
+pos => C.IN1
+pos => C.IN1
+neg => C.IN1
+neg => C.IN1
+neg => C.IN1
+neg => C.IN1
+neg => C.IN1
+neg => C.IN1
+neg => C.IN1
+neg => C.IN1
+
+
+|Arrary_Mutiplier|add_input:row_5
+M[0] => C.IN0
+M[0] => C.IN0
+M[1] => C.IN0
+M[1] => C.IN0
+M[2] => C.IN0
+M[2] => C.IN0
+M[3] => C.IN0
+M[3] => C.IN0
+M[4] => C.IN0
+M[4] => C.IN0
+M[5] => C.IN0
+M[5] => C.IN0
+M[6] => C.IN0
+M[6] => C.IN0
+M[7] => C.IN0
+M[7] => C.IN0
+pos => C.IN1
+pos => C.IN1
+pos => C.IN1
+pos => C.IN1
+pos => C.IN1
+pos => C.IN1
+pos => C.IN1
+pos => C.IN1
+neg => C.IN1
+neg => C.IN1
+neg => C.IN1
+neg => C.IN1
+neg => C.IN1
+neg => C.IN1
+neg => C.IN1
+neg => C.IN1
+
+
+|Arrary_Mutiplier|add_input:row_6
+M[0] => C.IN0
+M[0] => C.IN0
+M[1] => C.IN0
+M[1] => C.IN0
+M[2] => C.IN0
+M[2] => C.IN0
+M[3] => C.IN0
+M[3] => C.IN0
+M[4] => C.IN0
+M[4] => C.IN0
+M[5] => C.IN0
+M[5] => C.IN0
+M[6] => C.IN0
+M[6] => C.IN0
+M[7] => C.IN0
+M[7] => C.IN0
+pos => C.IN1
+pos => C.IN1
+pos => C.IN1
+pos => C.IN1
+pos => C.IN1
+pos => C.IN1
+pos => C.IN1
+pos => C.IN1
+neg => C.IN1
+neg => C.IN1
+neg => C.IN1
+neg => C.IN1
+neg => C.IN1
+neg => C.IN1
+neg => C.IN1
+neg => C.IN1
+
+
+|Arrary_Mutiplier|add_input:row_7
+M[0] => C.IN0
+M[0] => C.IN0
+M[1] => C.IN0
+M[1] => C.IN0
+M[2] => C.IN0
+M[2] => C.IN0
+M[3] => C.IN0
+M[3] => C.IN0
+M[4] => C.IN0
+M[4] => C.IN0
+M[5] => C.IN0
+M[5] => C.IN0
+M[6] => C.IN0
+M[6] => C.IN0
+M[7] => C.IN0
+M[7] => C.IN0
+pos => C.IN1
+pos => C.IN1
+pos => C.IN1
+pos => C.IN1
+pos => C.IN1
+pos => C.IN1
+pos => C.IN1
+pos => C.IN1
+neg => C.IN1
+neg => C.IN1
+neg => C.IN1
+neg => C.IN1
+neg => C.IN1
+neg => C.IN1
+neg => C.IN1
+neg => C.IN1
+
+
+|Arrary_Mutiplier|add_input:row_8
+M[0] => C.IN0
+M[0] => C.IN0
+M[1] => C.IN0
+M[1] => C.IN0
+M[2] => C.IN0
+M[2] => C.IN0
+M[3] => C.IN0
+M[3] => C.IN0
+M[4] => C.IN0
+M[4] => C.IN0
+M[5] => C.IN0
+M[5] => C.IN0
+M[6] => C.IN0
+M[6] => C.IN0
+M[7] => C.IN0
+M[7] => C.IN0
+pos => C.IN1
+pos => C.IN1
+pos => C.IN1
+pos => C.IN1
+pos => C.IN1
+pos => C.IN1
+pos => C.IN1
+pos => C.IN1
+neg => C.IN1
+neg => C.IN1
+neg => C.IN1
+neg => C.IN1
+neg => C.IN1
+neg => C.IN1
+neg => C.IN1
+neg => C.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row1
+carryin => C[0].IN1
+X[0] => X[0].IN1
+X[1] => X[1].IN1
+X[2] => X[2].IN1
+X[3] => X[3].IN1
+X[4] => X[4].IN1
+X[5] => X[5].IN1
+X[6] => X[6].IN1
+X[7] => X[7].IN1
+X[8] => X[8].IN1
+X[9] => X[9].IN1
+X[10] => X[10].IN1
+X[11] => X[11].IN1
+X[12] => X[12].IN1
+X[13] => X[13].IN1
+X[14] => X[14].IN1
+X[15] => X[15].IN1
+Y[0] => Y[0].IN1
+Y[1] => Y[1].IN1
+Y[2] => Y[2].IN1
+Y[3] => Y[3].IN1
+Y[4] => Y[4].IN1
+Y[5] => Y[5].IN1
+Y[6] => Y[6].IN1
+Y[7] => Y[7].IN1
+Y[8] => Y[8].IN1
+Y[9] => Y[9].IN1
+Y[10] => Y[10].IN1
+Y[11] => Y[11].IN1
+Y[12] => Y[12].IN1
+Y[13] => Y[13].IN1
+Y[14] => Y[14].IN1
+Y[15] => Y[15].IN1
+
+
+|Arrary_Mutiplier|ripple_g:row1|fulladd:addbit[0].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row1|fulladd:addbit[1].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row1|fulladd:addbit[2].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row1|fulladd:addbit[3].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row1|fulladd:addbit[4].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row1|fulladd:addbit[5].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row1|fulladd:addbit[6].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row1|fulladd:addbit[7].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row1|fulladd:addbit[8].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row1|fulladd:addbit[9].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row1|fulladd:addbit[10].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row1|fulladd:addbit[11].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row1|fulladd:addbit[12].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row1|fulladd:addbit[13].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row1|fulladd:addbit[14].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row1|fulladd:addbit[15].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row2
+carryin => C[0].IN1
+X[0] => X[0].IN1
+X[1] => X[1].IN1
+X[2] => X[2].IN1
+X[3] => X[3].IN1
+X[4] => X[4].IN1
+X[5] => X[5].IN1
+X[6] => X[6].IN1
+X[7] => X[7].IN1
+X[8] => X[8].IN1
+X[9] => X[9].IN1
+X[10] => X[10].IN1
+X[11] => X[11].IN1
+X[12] => X[12].IN1
+X[13] => X[13].IN1
+X[14] => X[14].IN1
+X[15] => X[15].IN1
+Y[0] => Y[0].IN1
+Y[1] => Y[1].IN1
+Y[2] => Y[2].IN1
+Y[3] => Y[3].IN1
+Y[4] => Y[4].IN1
+Y[5] => Y[5].IN1
+Y[6] => Y[6].IN1
+Y[7] => Y[7].IN1
+Y[8] => Y[8].IN1
+Y[9] => Y[9].IN1
+Y[10] => Y[10].IN1
+Y[11] => Y[11].IN1
+Y[12] => Y[12].IN1
+Y[13] => Y[13].IN1
+Y[14] => Y[14].IN1
+Y[15] => Y[15].IN1
+
+
+|Arrary_Mutiplier|ripple_g:row2|fulladd:addbit[0].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row2|fulladd:addbit[1].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row2|fulladd:addbit[2].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row2|fulladd:addbit[3].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row2|fulladd:addbit[4].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row2|fulladd:addbit[5].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row2|fulladd:addbit[6].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row2|fulladd:addbit[7].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row2|fulladd:addbit[8].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row2|fulladd:addbit[9].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row2|fulladd:addbit[10].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row2|fulladd:addbit[11].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row2|fulladd:addbit[12].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row2|fulladd:addbit[13].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row2|fulladd:addbit[14].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row2|fulladd:addbit[15].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row3
+carryin => C[0].IN1
+X[0] => X[0].IN1
+X[1] => X[1].IN1
+X[2] => X[2].IN1
+X[3] => X[3].IN1
+X[4] => X[4].IN1
+X[5] => X[5].IN1
+X[6] => X[6].IN1
+X[7] => X[7].IN1
+X[8] => X[8].IN1
+X[9] => X[9].IN1
+X[10] => X[10].IN1
+X[11] => X[11].IN1
+X[12] => X[12].IN1
+X[13] => X[13].IN1
+X[14] => X[14].IN1
+X[15] => X[15].IN1
+Y[0] => Y[0].IN1
+Y[1] => Y[1].IN1
+Y[2] => Y[2].IN1
+Y[3] => Y[3].IN1
+Y[4] => Y[4].IN1
+Y[5] => Y[5].IN1
+Y[6] => Y[6].IN1
+Y[7] => Y[7].IN1
+Y[8] => Y[8].IN1
+Y[9] => Y[9].IN1
+Y[10] => Y[10].IN1
+Y[11] => Y[11].IN1
+Y[12] => Y[12].IN1
+Y[13] => Y[13].IN1
+Y[14] => Y[14].IN1
+Y[15] => Y[15].IN1
+
+
+|Arrary_Mutiplier|ripple_g:row3|fulladd:addbit[0].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row3|fulladd:addbit[1].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row3|fulladd:addbit[2].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row3|fulladd:addbit[3].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row3|fulladd:addbit[4].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row3|fulladd:addbit[5].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row3|fulladd:addbit[6].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row3|fulladd:addbit[7].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row3|fulladd:addbit[8].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row3|fulladd:addbit[9].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row3|fulladd:addbit[10].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row3|fulladd:addbit[11].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row3|fulladd:addbit[12].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row3|fulladd:addbit[13].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row3|fulladd:addbit[14].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row3|fulladd:addbit[15].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row4
+carryin => C[0].IN1
+X[0] => X[0].IN1
+X[1] => X[1].IN1
+X[2] => X[2].IN1
+X[3] => X[3].IN1
+X[4] => X[4].IN1
+X[5] => X[5].IN1
+X[6] => X[6].IN1
+X[7] => X[7].IN1
+X[8] => X[8].IN1
+X[9] => X[9].IN1
+X[10] => X[10].IN1
+X[11] => X[11].IN1
+X[12] => X[12].IN1
+X[13] => X[13].IN1
+X[14] => X[14].IN1
+X[15] => X[15].IN1
+Y[0] => Y[0].IN1
+Y[1] => Y[1].IN1
+Y[2] => Y[2].IN1
+Y[3] => Y[3].IN1
+Y[4] => Y[4].IN1
+Y[5] => Y[5].IN1
+Y[6] => Y[6].IN1
+Y[7] => Y[7].IN1
+Y[8] => Y[8].IN1
+Y[9] => Y[9].IN1
+Y[10] => Y[10].IN1
+Y[11] => Y[11].IN1
+Y[12] => Y[12].IN1
+Y[13] => Y[13].IN1
+Y[14] => Y[14].IN1
+Y[15] => Y[15].IN1
+
+
+|Arrary_Mutiplier|ripple_g:row4|fulladd:addbit[0].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row4|fulladd:addbit[1].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row4|fulladd:addbit[2].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row4|fulladd:addbit[3].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row4|fulladd:addbit[4].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row4|fulladd:addbit[5].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row4|fulladd:addbit[6].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row4|fulladd:addbit[7].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row4|fulladd:addbit[8].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row4|fulladd:addbit[9].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row4|fulladd:addbit[10].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row4|fulladd:addbit[11].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row4|fulladd:addbit[12].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row4|fulladd:addbit[13].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row4|fulladd:addbit[14].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row4|fulladd:addbit[15].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row5
+carryin => C[0].IN1
+X[0] => X[0].IN1
+X[1] => X[1].IN1
+X[2] => X[2].IN1
+X[3] => X[3].IN1
+X[4] => X[4].IN1
+X[5] => X[5].IN1
+X[6] => X[6].IN1
+X[7] => X[7].IN1
+X[8] => X[8].IN1
+X[9] => X[9].IN1
+X[10] => X[10].IN1
+X[11] => X[11].IN1
+X[12] => X[12].IN1
+X[13] => X[13].IN1
+X[14] => X[14].IN1
+X[15] => X[15].IN1
+Y[0] => Y[0].IN1
+Y[1] => Y[1].IN1
+Y[2] => Y[2].IN1
+Y[3] => Y[3].IN1
+Y[4] => Y[4].IN1
+Y[5] => Y[5].IN1
+Y[6] => Y[6].IN1
+Y[7] => Y[7].IN1
+Y[8] => Y[8].IN1
+Y[9] => Y[9].IN1
+Y[10] => Y[10].IN1
+Y[11] => Y[11].IN1
+Y[12] => Y[12].IN1
+Y[13] => Y[13].IN1
+Y[14] => Y[14].IN1
+Y[15] => Y[15].IN1
+
+
+|Arrary_Mutiplier|ripple_g:row5|fulladd:addbit[0].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row5|fulladd:addbit[1].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row5|fulladd:addbit[2].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row5|fulladd:addbit[3].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row5|fulladd:addbit[4].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row5|fulladd:addbit[5].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row5|fulladd:addbit[6].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row5|fulladd:addbit[7].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row5|fulladd:addbit[8].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row5|fulladd:addbit[9].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row5|fulladd:addbit[10].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row5|fulladd:addbit[11].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row5|fulladd:addbit[12].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row5|fulladd:addbit[13].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row5|fulladd:addbit[14].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row5|fulladd:addbit[15].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row6
+carryin => C[0].IN1
+X[0] => X[0].IN1
+X[1] => X[1].IN1
+X[2] => X[2].IN1
+X[3] => X[3].IN1
+X[4] => X[4].IN1
+X[5] => X[5].IN1
+X[6] => X[6].IN1
+X[7] => X[7].IN1
+X[8] => X[8].IN1
+X[9] => X[9].IN1
+X[10] => X[10].IN1
+X[11] => X[11].IN1
+X[12] => X[12].IN1
+X[13] => X[13].IN1
+X[14] => X[14].IN1
+X[15] => X[15].IN1
+Y[0] => Y[0].IN1
+Y[1] => Y[1].IN1
+Y[2] => Y[2].IN1
+Y[3] => Y[3].IN1
+Y[4] => Y[4].IN1
+Y[5] => Y[5].IN1
+Y[6] => Y[6].IN1
+Y[7] => Y[7].IN1
+Y[8] => Y[8].IN1
+Y[9] => Y[9].IN1
+Y[10] => Y[10].IN1
+Y[11] => Y[11].IN1
+Y[12] => Y[12].IN1
+Y[13] => Y[13].IN1
+Y[14] => Y[14].IN1
+Y[15] => Y[15].IN1
+
+
+|Arrary_Mutiplier|ripple_g:row6|fulladd:addbit[0].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row6|fulladd:addbit[1].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row6|fulladd:addbit[2].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row6|fulladd:addbit[3].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row6|fulladd:addbit[4].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row6|fulladd:addbit[5].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row6|fulladd:addbit[6].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row6|fulladd:addbit[7].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row6|fulladd:addbit[8].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row6|fulladd:addbit[9].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row6|fulladd:addbit[10].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row6|fulladd:addbit[11].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row6|fulladd:addbit[12].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row6|fulladd:addbit[13].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row6|fulladd:addbit[14].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row6|fulladd:addbit[15].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row7
+carryin => C[0].IN1
+X[0] => X[0].IN1
+X[1] => X[1].IN1
+X[2] => X[2].IN1
+X[3] => X[3].IN1
+X[4] => X[4].IN1
+X[5] => X[5].IN1
+X[6] => X[6].IN1
+X[7] => X[7].IN1
+X[8] => X[8].IN1
+X[9] => X[9].IN1
+X[10] => X[10].IN1
+X[11] => X[11].IN1
+X[12] => X[12].IN1
+X[13] => X[13].IN1
+X[14] => X[14].IN1
+X[15] => X[15].IN1
+Y[0] => Y[0].IN1
+Y[1] => Y[1].IN1
+Y[2] => Y[2].IN1
+Y[3] => Y[3].IN1
+Y[4] => Y[4].IN1
+Y[5] => Y[5].IN1
+Y[6] => Y[6].IN1
+Y[7] => Y[7].IN1
+Y[8] => Y[8].IN1
+Y[9] => Y[9].IN1
+Y[10] => Y[10].IN1
+Y[11] => Y[11].IN1
+Y[12] => Y[12].IN1
+Y[13] => Y[13].IN1
+Y[14] => Y[14].IN1
+Y[15] => Y[15].IN1
+
+
+|Arrary_Mutiplier|ripple_g:row7|fulladd:addbit[0].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row7|fulladd:addbit[1].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row7|fulladd:addbit[2].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row7|fulladd:addbit[3].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row7|fulladd:addbit[4].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row7|fulladd:addbit[5].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row7|fulladd:addbit[6].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row7|fulladd:addbit[7].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row7|fulladd:addbit[8].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row7|fulladd:addbit[9].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row7|fulladd:addbit[10].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row7|fulladd:addbit[11].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row7|fulladd:addbit[12].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row7|fulladd:addbit[13].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row7|fulladd:addbit[14].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row7|fulladd:addbit[15].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row8
+carryin => C[0].IN1
+X[0] => X[0].IN1
+X[1] => X[1].IN1
+X[2] => X[2].IN1
+X[3] => X[3].IN1
+X[4] => X[4].IN1
+X[5] => X[5].IN1
+X[6] => X[6].IN1
+X[7] => X[7].IN1
+X[8] => X[8].IN1
+X[9] => X[9].IN1
+X[10] => X[10].IN1
+X[11] => X[11].IN1
+X[12] => X[12].IN1
+X[13] => X[13].IN1
+X[14] => X[14].IN1
+X[15] => X[15].IN1
+Y[0] => Y[0].IN1
+Y[1] => Y[1].IN1
+Y[2] => Y[2].IN1
+Y[3] => Y[3].IN1
+Y[4] => Y[4].IN1
+Y[5] => Y[5].IN1
+Y[6] => Y[6].IN1
+Y[7] => Y[7].IN1
+Y[8] => Y[8].IN1
+Y[9] => Y[9].IN1
+Y[10] => Y[10].IN1
+Y[11] => Y[11].IN1
+Y[12] => Y[12].IN1
+Y[13] => Y[13].IN1
+Y[14] => Y[14].IN1
+Y[15] => Y[15].IN1
+
+
+|Arrary_Mutiplier|ripple_g:row8|fulladd:addbit[0].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row8|fulladd:addbit[1].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row8|fulladd:addbit[2].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row8|fulladd:addbit[3].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row8|fulladd:addbit[4].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row8|fulladd:addbit[5].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row8|fulladd:addbit[6].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row8|fulladd:addbit[7].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row8|fulladd:addbit[8].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row8|fulladd:addbit[9].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row8|fulladd:addbit[10].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row8|fulladd:addbit[11].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row8|fulladd:addbit[12].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row8|fulladd:addbit[13].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row8|fulladd:addbit[14].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+
+|Arrary_Mutiplier|ripple_g:row8|fulladd:addbit[15].stage
+Cin => s.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+x => s.IN0
+x => Cout.IN0
+x => Cout.IN1
+y => s.IN1
+y => Cout.IN1
+y => Cout.IN1
+
+

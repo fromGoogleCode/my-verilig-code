@@ -1,0 +1,18 @@
+
+State Machine - |nand_write|state_reg
+Name state_reg.pageWriteDone state_reg.pageWriteBusyWait state_reg.pageWriteCmd2 state_reg.pageWriteData state_reg.pageWriteBuffer state_reg.pageWriteAddr state_reg.pageWriteCmd1 state_reg.pageWriteWAIT 
+state_reg.pageWriteWAIT 0 0 0 0 0 0 0 0 
+state_reg.pageWriteCmd1 0 0 0 0 0 0 1 1 
+state_reg.pageWriteAddr 0 0 0 0 0 1 0 1 
+state_reg.pageWriteBuffer 0 0 0 0 1 0 0 1 
+state_reg.pageWriteData 0 0 0 1 0 0 0 1 
+state_reg.pageWriteCmd2 0 0 1 0 0 0 0 1 
+state_reg.pageWriteBusyWait 0 1 0 0 0 0 0 1 
+state_reg.pageWriteDone 1 0 0 0 0 0 0 1 
+
+State Machine - |nand_write|toggle:toggle|state_reg
+Name state_reg.toggleDONE state_reg.toggle2 state_reg.toggle1 state_reg.toggleWAIT 
+state_reg.toggleWAIT 0 0 0 0 
+state_reg.toggle1 0 0 1 1 
+state_reg.toggle2 0 1 0 1 
+state_reg.toggleDONE 1 0 0 1 

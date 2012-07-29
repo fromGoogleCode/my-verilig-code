@@ -1,0 +1,35 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\albert\Documents\Quartus_workspace\toggle\simulation\modelsim
+vmy_toggle_tb
+!s100 iO:3T9C7Wj1JXD62:N8[51
+IJiN:@V0f1<n9?UUMZdZ720
+Vf_S8zGm4jSFB8X5OI[QF:2
+w1336953685
+8C:/Users/albert/Documents/Quartus_workspace/toggle/my_toggle_tb.v
+FC:/Users/albert/Documents/Quartus_workspace/toggle/my_toggle_tb.v
+L0 15
+Z1 OV;L;6.5e;42
+r1
+!s85 0
+31
+!s101 -O0
+Z2 o-vlog01compat -work work -O0
+!s92 -vlog01compat -work work +incdir+C:/Users/albert/Documents/Quartus_workspace/toggle -O0
+vtoggle
+IBAZ6Gja[7KakPbnAZ16iM3
+VQk>ViR0?E@ljSG]Go]:B72
+w1338265671
+8toggle.vo
+Ftoggle.vo
+L0 31
+R1
+r1
+31
+R2
+!s100 hICI7Jc3GB]5YOiWlnB843
+!s85 0
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+. -O0

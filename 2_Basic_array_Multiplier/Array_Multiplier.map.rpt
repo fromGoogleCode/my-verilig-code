@@ -1,0 +1,703 @@
+Analysis & Synthesis report for Array_Multiplier
+Tue Feb 14 22:42:08 2012
+Quartus II 32-bit Version 11.1 Build 216 11/23/2011 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Parameter Settings for User Entity Instance: Top-level Entity: |Arrary_Mutiplier
+ 10. Parameter Settings for User Entity Instance: booth_encode:BE
+ 11. Parameter Settings for User Entity Instance: add_input:row_1
+ 12. Parameter Settings for User Entity Instance: add_input:row_2
+ 13. Parameter Settings for User Entity Instance: add_input:row_3
+ 14. Parameter Settings for User Entity Instance: add_input:row_4
+ 15. Parameter Settings for User Entity Instance: add_input:row_5
+ 16. Parameter Settings for User Entity Instance: add_input:row_6
+ 17. Parameter Settings for User Entity Instance: add_input:row_7
+ 18. Parameter Settings for User Entity Instance: add_input:row_8
+ 19. Parameter Settings for User Entity Instance: ripple_g:row1
+ 20. Parameter Settings for User Entity Instance: ripple_g:row2
+ 21. Parameter Settings for User Entity Instance: ripple_g:row3
+ 22. Parameter Settings for User Entity Instance: ripple_g:row4
+ 23. Parameter Settings for User Entity Instance: ripple_g:row5
+ 24. Parameter Settings for User Entity Instance: ripple_g:row6
+ 25. Parameter Settings for User Entity Instance: ripple_g:row7
+ 26. Parameter Settings for User Entity Instance: ripple_g:row8
+ 27. Port Connectivity Checks: "ripple_g:row8"
+ 28. Port Connectivity Checks: "ripple_g:row7"
+ 29. Port Connectivity Checks: "ripple_g:row6"
+ 30. Port Connectivity Checks: "ripple_g:row5"
+ 31. Port Connectivity Checks: "ripple_g:row4"
+ 32. Port Connectivity Checks: "ripple_g:row3"
+ 33. Port Connectivity Checks: "ripple_g:row2"
+ 34. Port Connectivity Checks: "ripple_g:row1"
+ 35. Port Connectivity Checks: "add_input:row_8"
+ 36. Port Connectivity Checks: "add_input:row_7"
+ 37. Port Connectivity Checks: "add_input:row_6"
+ 38. Port Connectivity Checks: "add_input:row_5"
+ 39. Port Connectivity Checks: "add_input:row_4"
+ 40. Port Connectivity Checks: "add_input:row_3"
+ 41. Port Connectivity Checks: "add_input:row_2"
+ 42. Elapsed Time Per Partition
+ 43. Analysis & Synthesis Messages
+ 44. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2011 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                       ;
++------------------------------------+-----------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Tue Feb 14 22:42:08 2012         ;
+; Quartus II 32-bit Version          ; 11.1 Build 216 11/23/2011 SP 1 SJ Web Edition ;
+; Revision Name                      ; Array_Multiplier                              ;
+; Top-level Entity Name              ; Arrary_Mutiplier                              ;
+; Family                             ; Cyclone II                                    ;
+; Total logic elements               ; 1                                             ;
+;     Total combinational functions  ; 1                                             ;
+;     Dedicated logic registers      ; 0                                             ;
+; Total registers                    ; 0                                             ;
+; Total pins                         ; 32                                            ;
+; Total virtual pins                 ; 0                                             ;
+; Total memory bits                  ; 0                                             ;
+; Embedded Multiplier 9-bit elements ; 0                                             ;
+; Total PLLs                         ; 0                                             ;
++------------------------------------+-----------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Top-level entity name                                                      ; Arrary_Mutiplier   ; Array_Multiplier   ;
+; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; Off                ; Off                ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                                                  ;
++-------------------------------------------------------------------------------------------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------------------------------------+
+; File Name with User-Entered Path                                                                                  ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                                             ;
++-------------------------------------------------------------------------------------------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------------------------------------+
+; ../../../Dropbox/Coding_zone/Verilog/ECE342_Computer_Hardware_Lab/Lab_2/Basic Array Multiplier/ripple_g.v         ; yes             ; User Verilog HDL File  ; C:/Users/albert/Dropbox/Coding_zone/Verilog/ECE342_Computer_Hardware_Lab/Lab_2/Basic Array Multiplier/ripple_g.v         ;
+; ../../../Dropbox/Coding_zone/Verilog/ECE342_Computer_Hardware_Lab/Lab_2/Basic Array Multiplier/fulladd.v          ; yes             ; User Verilog HDL File  ; C:/Users/albert/Dropbox/Coding_zone/Verilog/ECE342_Computer_Hardware_Lab/Lab_2/Basic Array Multiplier/fulladd.v          ;
+; ../../../Dropbox/Coding_zone/Verilog/ECE342_Computer_Hardware_Lab/Lab_2/Basic Array Multiplier/Booth_encode.v     ; yes             ; User Verilog HDL File  ; C:/Users/albert/Dropbox/Coding_zone/Verilog/ECE342_Computer_Hardware_Lab/Lab_2/Basic Array Multiplier/Booth_encode.v     ;
+; ../../../Dropbox/Coding_zone/Verilog/ECE342_Computer_Hardware_Lab/Lab_2/Basic Array Multiplier/Arrary_Mutiplier.v ; yes             ; User Verilog HDL File  ; C:/Users/albert/Dropbox/Coding_zone/Verilog/ECE342_Computer_Hardware_Lab/Lab_2/Basic Array Multiplier/Arrary_Mutiplier.v ;
+; ../../../Dropbox/Coding_zone/Verilog/ECE342_Computer_Hardware_Lab/Lab_2/Basic Array Multiplier/add_input.v        ; yes             ; User Verilog HDL File  ; C:/Users/albert/Dropbox/Coding_zone/Verilog/ECE342_Computer_Hardware_Lab/Lab_2/Basic Array Multiplier/add_input.v        ;
++-------------------------------------------------------------------------------------------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                       ;
++---------------------------------------------+---------------------+
+; Resource                                    ; Usage               ;
++---------------------------------------------+---------------------+
+; Estimated Total logic elements              ; 1                   ;
+;                                             ;                     ;
+; Total combinational functions               ; 1                   ;
+; Logic element usage by number of LUT inputs ;                     ;
+;     -- 4 input functions                    ; 0                   ;
+;     -- 3 input functions                    ; 0                   ;
+;     -- <=2 input functions                  ; 1                   ;
+;                                             ;                     ;
+; Logic elements by mode                      ;                     ;
+;     -- normal mode                          ; 1                   ;
+;     -- arithmetic mode                      ; 0                   ;
+;                                             ;                     ;
+; Total registers                             ; 0                   ;
+;     -- Dedicated logic registers            ; 0                   ;
+;     -- I/O registers                        ; 0                   ;
+;                                             ;                     ;
+; I/O pins                                    ; 32                  ;
+; Maximum fan-out node                        ; add_input:row_1|C~0 ;
+; Maximum fan-out                             ; 1                   ;
+; Total fan-out                               ; 3                   ;
+; Average fan-out                             ; 0.09                ;
++---------------------------------------------+---------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                       ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name               ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------+--------------+
+; |Arrary_Mutiplier          ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 32   ; 0            ; |Arrary_Mutiplier                 ;              ;
+;    |add_input:row_1|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Arrary_Mutiplier|add_input:row_1 ;              ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |Arrary_Mutiplier ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; n              ; 8     ; Signed Integer                                          ;
+; m              ; 16    ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: booth_encode:BE ;
++----------------+-------+-------------------------------------+
+; Parameter Name ; Value ; Type                                ;
++----------------+-------+-------------------------------------+
+; n              ; 8     ; Signed Integer                      ;
++----------------+-------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: add_input:row_1 ;
++----------------+-------+-------------------------------------+
+; Parameter Name ; Value ; Type                                ;
++----------------+-------+-------------------------------------+
+; n              ; 8     ; Signed Integer                      ;
++----------------+-------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: add_input:row_2 ;
++----------------+-------+-------------------------------------+
+; Parameter Name ; Value ; Type                                ;
++----------------+-------+-------------------------------------+
+; n              ; 8     ; Signed Integer                      ;
++----------------+-------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: add_input:row_3 ;
++----------------+-------+-------------------------------------+
+; Parameter Name ; Value ; Type                                ;
++----------------+-------+-------------------------------------+
+; n              ; 8     ; Signed Integer                      ;
++----------------+-------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: add_input:row_4 ;
++----------------+-------+-------------------------------------+
+; Parameter Name ; Value ; Type                                ;
++----------------+-------+-------------------------------------+
+; n              ; 8     ; Signed Integer                      ;
++----------------+-------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: add_input:row_5 ;
++----------------+-------+-------------------------------------+
+; Parameter Name ; Value ; Type                                ;
++----------------+-------+-------------------------------------+
+; n              ; 8     ; Signed Integer                      ;
++----------------+-------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: add_input:row_6 ;
++----------------+-------+-------------------------------------+
+; Parameter Name ; Value ; Type                                ;
++----------------+-------+-------------------------------------+
+; n              ; 8     ; Signed Integer                      ;
++----------------+-------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: add_input:row_7 ;
++----------------+-------+-------------------------------------+
+; Parameter Name ; Value ; Type                                ;
++----------------+-------+-------------------------------------+
+; n              ; 8     ; Signed Integer                      ;
++----------------+-------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: add_input:row_8 ;
++----------------+-------+-------------------------------------+
+; Parameter Name ; Value ; Type                                ;
++----------------+-------+-------------------------------------+
+; n              ; 8     ; Signed Integer                      ;
++----------------+-------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ripple_g:row1 ;
++----------------+-------+-----------------------------------+
+; Parameter Name ; Value ; Type                              ;
++----------------+-------+-----------------------------------+
+; n              ; 16    ; Signed Integer                    ;
++----------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ripple_g:row2 ;
++----------------+-------+-----------------------------------+
+; Parameter Name ; Value ; Type                              ;
++----------------+-------+-----------------------------------+
+; n              ; 16    ; Signed Integer                    ;
++----------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ripple_g:row3 ;
++----------------+-------+-----------------------------------+
+; Parameter Name ; Value ; Type                              ;
++----------------+-------+-----------------------------------+
+; n              ; 16    ; Signed Integer                    ;
++----------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ripple_g:row4 ;
++----------------+-------+-----------------------------------+
+; Parameter Name ; Value ; Type                              ;
++----------------+-------+-----------------------------------+
+; n              ; 16    ; Signed Integer                    ;
++----------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ripple_g:row5 ;
++----------------+-------+-----------------------------------+
+; Parameter Name ; Value ; Type                              ;
++----------------+-------+-----------------------------------+
+; n              ; 16    ; Signed Integer                    ;
++----------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ripple_g:row6 ;
++----------------+-------+-----------------------------------+
+; Parameter Name ; Value ; Type                              ;
++----------------+-------+-----------------------------------+
+; n              ; 16    ; Signed Integer                    ;
++----------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ripple_g:row7 ;
++----------------+-------+-----------------------------------+
+; Parameter Name ; Value ; Type                              ;
++----------------+-------+-----------------------------------+
+; n              ; 16    ; Signed Integer                    ;
++----------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ripple_g:row8 ;
++----------------+-------+-----------------------------------+
+; Parameter Name ; Value ; Type                              ;
++----------------+-------+-----------------------------------+
+; n              ; 16    ; Signed Integer                    ;
++----------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ripple_g:row8"                                                                                                                                                                            ;
++-------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                                                                                                                            ;
++-------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; carryin     ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; carryin[-1] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; X           ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (16 bits) it drives.  Extra input bit(s) "X[15..1]" will be connected to GND.                                        ;
+; Y[6..0]     ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; S           ; Output ; Warning  ; Output or bidir port (16 bits) is wider than the port expression (1 bits) it drives; bit(s) "S[15..1]" have no fanouts                                                             ;
++-------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ripple_g:row7"                                                                                                                                                                            ;
++-------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                                                                                                                            ;
++-------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; carryin     ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; carryin[-1] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; X           ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (16 bits) it drives.  Extra input bit(s) "X[15..1]" will be connected to GND.                                        ;
+; Y[5..0]     ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; S           ; Output ; Warning  ; Output or bidir port (16 bits) is wider than the port expression (1 bits) it drives; bit(s) "S[15..1]" have no fanouts                                                             ;
++-------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ripple_g:row6"                                                                                                                                                                            ;
++-------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                                                                                                                            ;
++-------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; carryin     ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; carryin[-1] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; X           ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (16 bits) it drives.  Extra input bit(s) "X[15..1]" will be connected to GND.                                        ;
+; Y[4..0]     ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; S           ; Output ; Warning  ; Output or bidir port (16 bits) is wider than the port expression (1 bits) it drives; bit(s) "S[15..1]" have no fanouts                                                             ;
++-------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ripple_g:row5"                                                                                                                                                                            ;
++-------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                                                                                                                            ;
++-------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; carryin     ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; carryin[-1] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; X           ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (16 bits) it drives.  Extra input bit(s) "X[15..1]" will be connected to GND.                                        ;
+; Y[3..0]     ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; S           ; Output ; Warning  ; Output or bidir port (16 bits) is wider than the port expression (1 bits) it drives; bit(s) "S[15..1]" have no fanouts                                                             ;
++-------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ripple_g:row4"                                                                                                                                                                            ;
++-------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                                                                                                                            ;
++-------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; carryin     ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; carryin[-1] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; X           ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (16 bits) it drives.  Extra input bit(s) "X[15..1]" will be connected to GND.                                        ;
+; Y[2..0]     ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; S           ; Output ; Warning  ; Output or bidir port (16 bits) is wider than the port expression (1 bits) it drives; bit(s) "S[15..1]" have no fanouts                                                             ;
++-------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ripple_g:row3"                                                                                                                                                                            ;
++-------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                                                                                                                            ;
++-------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; carryin     ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; carryin[-1] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; X           ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (16 bits) it drives.  Extra input bit(s) "X[15..1]" will be connected to GND.                                        ;
+; Y[1..0]     ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; S           ; Output ; Warning  ; Output or bidir port (16 bits) is wider than the port expression (1 bits) it drives; bit(s) "S[15..1]" have no fanouts                                                             ;
++-------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ripple_g:row2"                                                                                                                                                                            ;
++-------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                                                                                                                            ;
++-------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; carryin     ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; carryin[-1] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; X           ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (16 bits) it drives.  Extra input bit(s) "X[15..1]" will be connected to GND.                                        ;
+; Y[0]        ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; S           ; Output ; Warning  ; Output or bidir port (16 bits) is wider than the port expression (1 bits) it drives; bit(s) "S[15..1]" have no fanouts                                                             ;
++-------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ripple_g:row1"                                                                                                                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                                                                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; carryin     ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts.  ;
+; carryin[-1] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; X           ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (16 bits) it drives.  The 16 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; X[15..0]    ; Input  ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; S           ; Output ; Warning  ; Output or bidir port (16 bits) is wider than the port expression (1 bits) it drives; bit(s) "S[15..1]" have no fanouts                                                              ;
+; carryout    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                                 ;
++-------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "add_input:row_8"                                                                       ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                             ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; C[6..0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "add_input:row_7"                                                                       ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                             ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; C[5..0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "add_input:row_6"                                                                       ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                             ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; C[4..0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "add_input:row_5"                                                                       ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                             ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; C[3..0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "add_input:row_4"                                                                       ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                             ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; C[2..0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "add_input:row_3"                                                                       ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                             ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; C[1..0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "add_input:row_2"                                                                    ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; C[0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 32-bit Analysis & Synthesis
+    Info: Version 11.1 Build 216 11/23/2011 Service Pack 1 SJ Web Edition
+    Info: Processing started: Tue Feb 14 22:41:58 2012
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Array_Multiplier -c Array_Multiplier
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file /users/albert/dropbox/coding_zone/verilog/ece342_computer_hardware_lab/lab_2/basic array multiplier/ripple_g.v
+    Info (12023): Found entity 1: ripple_g
+Info (12021): Found 1 design units, including 1 entities, in source file /users/albert/dropbox/coding_zone/verilog/ece342_computer_hardware_lab/lab_2/basic array multiplier/fulladd.v
+    Info (12023): Found entity 1: fulladd
+Info (12021): Found 1 design units, including 1 entities, in source file /users/albert/dropbox/coding_zone/verilog/ece342_computer_hardware_lab/lab_2/basic array multiplier/booth_encode.v
+    Info (12023): Found entity 1: booth_encode
+Info (12021): Found 1 design units, including 1 entities, in source file /users/albert/dropbox/coding_zone/verilog/ece342_computer_hardware_lab/lab_2/basic array multiplier/arrary_mutiplier.v
+    Info (12023): Found entity 1: Arrary_Mutiplier
+Info (12021): Found 1 design units, including 1 entities, in source file /users/albert/dropbox/coding_zone/verilog/ece342_computer_hardware_lab/lab_2/basic array multiplier/add_input.v
+    Info (12023): Found entity 1: add_input
+Warning (10236): Verilog HDL Implicit Net warning at Arrary_Mutiplier.v(33): created implicit net for "S_row1"
+Warning (10236): Verilog HDL Implicit Net warning at Arrary_Mutiplier.v(33): created implicit net for "carryout"
+Warning (10236): Verilog HDL Implicit Net warning at Arrary_Mutiplier.v(34): created implicit net for "S_row2"
+Warning (10236): Verilog HDL Implicit Net warning at Arrary_Mutiplier.v(35): created implicit net for "S_row3"
+Warning (10236): Verilog HDL Implicit Net warning at Arrary_Mutiplier.v(36): created implicit net for "S_row4"
+Warning (10236): Verilog HDL Implicit Net warning at Arrary_Mutiplier.v(37): created implicit net for "S_row5"
+Warning (10236): Verilog HDL Implicit Net warning at Arrary_Mutiplier.v(38): created implicit net for "S_row6"
+Warning (10236): Verilog HDL Implicit Net warning at Arrary_Mutiplier.v(39): created implicit net for "S_row7"
+Warning (10236): Verilog HDL Implicit Net warning at Arrary_Mutiplier.v(40): created implicit net for "S_row8"
+Info (12127): Elaborating entity "Arrary_Mutiplier" for the top level hierarchy
+Info (12128): Elaborating entity "booth_encode" for hierarchy "booth_encode:BE"
+Warning (10240): Verilog HDL Always Construct warning at Booth_encode.v(8): inferring latch(es) for variable "plus", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at Booth_encode.v(8): inferring latch(es) for variable "minus", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "minus[0]" at Booth_encode.v(15)
+Info (10041): Inferred latch for "plus[0]" at Booth_encode.v(15)
+Info (12128): Elaborating entity "add_input" for hierarchy "add_input:row_1"
+Warning (10235): Verilog HDL Always Construct warning at add_input.v(14): variable "pos" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at add_input.v(14): variable "neg" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Info (12128): Elaborating entity "ripple_g" for hierarchy "ripple_g:row1"
+Info (12128): Elaborating entity "fulladd" for hierarchy "ripple_g:row1|fulladd:addbit[0].stage"
+Warning (12241): 8 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "outcome[1]" is stuck at GND
+    Warning (13410): Pin "outcome[2]" is stuck at GND
+    Warning (13410): Pin "outcome[3]" is stuck at GND
+    Warning (13410): Pin "outcome[4]" is stuck at GND
+    Warning (13410): Pin "outcome[5]" is stuck at GND
+    Warning (13410): Pin "outcome[6]" is stuck at GND
+    Warning (13410): Pin "outcome[7]" is stuck at GND
+    Warning (13410): Pin "outcome[8]" is stuck at GND
+    Warning (13410): Pin "outcome[9]" is stuck at GND
+    Warning (13410): Pin "outcome[10]" is stuck at GND
+    Warning (13410): Pin "outcome[11]" is stuck at GND
+    Warning (13410): Pin "outcome[12]" is stuck at GND
+    Warning (13410): Pin "outcome[13]" is stuck at GND
+    Warning (13410): Pin "outcome[14]" is stuck at GND
+    Warning (13410): Pin "outcome[15]" is stuck at GND
+Info (144001): Generated suppressed messages file C:/Users/albert/Documents/Quartus_workspace/2_Basic_array_Multiplier/Array_Multiplier.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+Warning (21074): Design contains 14 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "M[1]"
+    Warning (15610): No output dependent on input pin "M[2]"
+    Warning (15610): No output dependent on input pin "M[3]"
+    Warning (15610): No output dependent on input pin "M[4]"
+    Warning (15610): No output dependent on input pin "M[5]"
+    Warning (15610): No output dependent on input pin "M[6]"
+    Warning (15610): No output dependent on input pin "M[7]"
+    Warning (15610): No output dependent on input pin "Q[1]"
+    Warning (15610): No output dependent on input pin "Q[2]"
+    Warning (15610): No output dependent on input pin "Q[3]"
+    Warning (15610): No output dependent on input pin "Q[4]"
+    Warning (15610): No output dependent on input pin "Q[5]"
+    Warning (15610): No output dependent on input pin "Q[6]"
+    Warning (15610): No output dependent on input pin "Q[7]"
+Info (21057): Implemented 33 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 16 input pins
+    Info (21059): Implemented 16 output pins
+    Info (21061): Implemented 1 logic cells
+Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 46 warnings
+    Info: Peak virtual memory: 291 megabytes
+    Info: Processing ended: Tue Feb 14 22:42:08 2012
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:02
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/albert/Documents/Quartus_workspace/2_Basic_array_Multiplier/Array_Multiplier.map.smsg.
+
+

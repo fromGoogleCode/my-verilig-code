@@ -1,0 +1,219 @@
+/**********************************************************
+
+file:  nand_write.v
+
+Author:	  albert
+
+date: 2012/05/13
+
+Description
+
+ **********************************************************/
+module readID
+(
+  input wire clk,reset,
+  output reg IDread_done,
+  output reg [7:0] output_data,
+  input wire [7:0] input_data,
+  
+  //testbench signals
+  output wire toggleDone_tb,dummy_cnt_tb,
+  output wire [1:0] state_reg_tb,IDread_cnt_tb,
+  output wire [7:0] DevID_tb,
+  output wire [4:0] outputVEC_tb
+  //testbench signals
+  );
+  
+  /*
+  //PLL module  
+   wire locked;
+   wire clk150;
+  //PLL instansiate
+  pll pll (
+   .inclk0(clk),
+	.c0(clk150),
+	.locked(locked)
+	);
+	*/
+	
+	//toggle module
+	wire [4:0]outputVEC;
+	wire toggleDone;
+	wire dummy_cnt;
+	
+
+  
+  //state declaration 
+  localparam [1:0]
+   readIDwait       = 2'b00,
+	readID           = 2'b01,  //latch the cmd
+	readIDaddr       = 2'b10, //4 cycle address
+	readIDfour       = 2'b11; //wait for 100ns and buffer ready signal
+
+	
+	
+	//constant declaration
+	localparam CMD = 8'h90;
+	
+	
+	//signal declaration
+	reg [3:0] state_reg, state_next;
+	reg toggle_enable_reg,toggle_enable_next;
+	reg [4:0] outputVEC1,outputVEC1_next; // FORMAT: nCE|CLE|ALE|nRE|nWE
+   reg [4:0] outputVEC2,outputVEC2_next; // FORMAT: nCE|CLE|ALE|nRE|nWE
+   reg [11:0] outputUPTO,outputUPTO_next;
+	reg [1:0] IDread_cnt,IDread_cnt_next;
+	reg [7:0] DevID;
+	
+	toggle toggle(
+  .clk(clk),
+  .reset(reset),
+  .enable(toggle_enable_reg),   //input for toggle
+  .cntUPTO(outputUPTO),    //input for toggle
+  .outputVEC1(outputVEC1), //input for toggle
+  .outputVEC2(outputVEC2), //input for toggle
+  .done(toggleDone),       
+  .outputVEC(outputVEC),
+  .dummy_cnt(dummy_cnt)
+  ); 
+	
+	//FSM 
+	always @ (posedge clk, posedge reset)
+	if(reset)
+	  begin
+	     state_reg <= readIDwait;
+		  toggle_enable_reg <=0;
+		  outputVEC1 <= 0;
+        outputVEC2 <= 0;
+        outputUPTO <= 0; 
+		  IDread_cnt <= 0;
+	  end
+	 else
+	  begin
+	    state_reg <=state_next;
+		 toggle_enable_reg <=toggle_enable_next;
+		 outputVEC1 <=outputVEC1_next;
+		 outputVEC2 <=outputVEC2_next;
+		 outputUPTO <=outputUPTO_next;
+       IDread_cnt <=IDread_cnt_next;
+		 
+	  end
+		
+	 //FSM next-state logic
+	 always @*
+	 begin
+	    state_next=state_reg;
+		 toggle_enable_next=toggle_enable_next;
+		 outputVEC1_next=outputVEC1;
+		 outputVEC2_next=outputVEC2;
+		 outputUPTO_next=outputUPTO;
+
+		case(state_reg)
+		 //
+		  readIDwait:
+		    begin 
+			  if( input_data== CMD )
+			    begin
+			     state_next=readID;
+				  outputVEC1_next=5'b10010;
+              outputVEC2_next=5'b11010;
+              outputUPTO_next=1;
+				  output_data=CMD;
+				  toggle_enable_next=1;
+				 end
+				else
+				 begin
+				 //avoid inferred latch
+				 outputVEC1_next=0;
+             outputVEC2_next=0;
+             outputUPTO_next=0;
+				 //reg reset
+				 toggle_enable_next=0;
+				 IDread_cnt_next=0;
+				 IDread_done=0;
+				 DevID=0;
+				 output_data=0;
+				 end
+			 end
+		//
+		  readID:
+		    begin
+			  if(toggleDone==1) //@@@@@@@@@@@@
+			    begin
+				  state_next=readIDaddr;
+				  outputVEC1_next=5'b10010;
+              outputVEC2_next=5'b11100;
+              outputUPTO_next=1;
+				  output_data=0;
+				  toggle_enable_next=1;
+				 end
+			   else
+				 begin
+				 outputVEC1_next=5'b10010;
+             outputVEC2_next=5'b11010;
+             outputUPTO_next=1;
+				 output_data=CMD;
+				 toggle_enable_next=0;
+				 end
+			  end
+		//
+		  readIDaddr:
+		    begin
+			  if(toggleDone==1) //@@@@@@@@@@@@
+			    begin
+				   state_next=readIDfour;
+					outputVEC1_next=5'b00001;
+               outputVEC2_next=5'b00000;
+              outputUPTO_next=4;
+				  output_data=0;
+				  toggle_enable_next=1;
+				 end
+			   else
+				 begin
+				 outputVEC1_next=5'b10010;
+              outputVEC2_next=5'b11100;
+             outputUPTO_next=1;
+				 output_data=0;
+				 toggle_enable_next=0;
+				 end
+			 end
+		//
+		  readIDfour:
+		     begin
+			  if(toggleDone==1) //@@@@@@@@@@@@
+			    begin
+				   state_next=readIDwait;
+					outputVEC1_next=0;
+               outputVEC2_next=0;
+               outputUPTO_next=0;
+				   IDread_done=1;
+				 end
+			   else
+				 begin
+				 if(dummy_cnt==1)
+				 begin
+				 IDread_cnt_next=IDread_cnt_next+1;
+				 DevID=input_data;
+				 end
+				 outputVEC1_next=5'b00001;
+             outputVEC2_next=5'b00000;
+             outputUPTO_next=4;
+				 output_data=0; //This state is reading the ID, check if need to set to 0
+				 toggle_enable_next=0;
+				 end
+			 end 
+			default: state_next=readIDwait;
+		endcase
+	end
+	
+	  
+	//techbench signals
+	  assign toggleDone_tb=toggleDone;
+	  assign dummy_cnt_tb=dummy_cnt;
+	  assign state_reg_tb=state_reg;
+	  assign IDread_cnt_tb=IDread_cnt;
+	  assign DevID_tb=DevID;
+	  assign outputVEC_tb=outputVEC;
+	  
+endmodule
+		 

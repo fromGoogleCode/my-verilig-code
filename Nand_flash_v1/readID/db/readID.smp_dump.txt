@@ -1,0 +1,14 @@
+
+State Machine - |readID|state_reg
+Name state_reg.readIDfour state_reg.readIDaddr state_reg.readID state_reg.readIDwait 
+state_reg.readIDwait 0 0 0 0 
+state_reg.readID 0 0 1 1 
+state_reg.readIDaddr 0 1 0 1 
+state_reg.readIDfour 1 0 0 1 
+
+State Machine - |readID|toggle:toggle|state_reg
+Name state_reg.toggleDONE state_reg.toggle2 state_reg.toggle1 state_reg.toggleWAIT 
+state_reg.toggleWAIT 0 0 0 0 
+state_reg.toggle1 0 0 1 1 
+state_reg.toggle2 0 1 0 1 
+state_reg.toggleDONE 1 0 0 1 

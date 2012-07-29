@@ -1,0 +1,9 @@
+
+
+C:/Users/albert/Documents/Quartus_workspace/Pll/pll.v
+
+May 02 08PM:19:18>: Failed to generate the synthesis netlist file
+
+C:/Users/albert/Documents/Quartus_workspace/Pll/pll.v
+
+May 02 08PM:34:31>: Failed to generate the synthesis netlist file

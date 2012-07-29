@@ -1,0 +1,139 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\albert\Documents\Quartus_workspace\Pll\simulation\modelsim
+vadd_input
+Z1 !s100 jHA2lORjQ0[<3e@P?:I?<1
+Z2 InMGF@QHg6iQ`[Jz5KPbL>3
+Z3 V]U3ze`F@eQzDjQVoc=Y_Y3
+Z4 dC:\Users\albert\Documents\modelsim_workspace
+w1329454942
+Z5 8C:/Users/albert/Dropbox/Coding_zone/Verilog/ECE342_Computer_Hardware_Lab/Lab_2/Basic Array Multiplier/add_input.v
+Z6 FC:/Users/albert/Dropbox/Coding_zone/Verilog/ECE342_Computer_Hardware_Lab/Lab_2/Basic Array Multiplier/add_input.v
+L0 1
+Z7 OV;L;10.0c;49
+r1
+31
+Z8 !s90 -reportprogress|300|-work|work|-nocovercells|C:/Users/albert/Dropbox/Coding_zone/Verilog/ECE342_Computer_Hardware_Lab/Lab_2/Basic Array Multiplier/add_input.v|
+Z9 !s102 -nocovercells
+Z10 o-work work -nocovercells -O0
+Z11 !s107 C:/Users/albert/Dropbox/Coding_zone/Verilog/ECE342_Computer_Hardware_Lab/Lab_2/Basic Array Multiplier/add_input.v|
+!s85 0
+!s108 1336016477.260000
+!s101 -O0
+vadd_input_tb
+Z12 !s100 AKZJheniAPj[VUgL_kGo;2
+Z13 IG>]WZJzT9S:5jmXm3T2:O3
+Z14 VoOm5bb4kUB^?IM26V`<A:3
+R4
+w1329453543
+Z15 8C:/Users/albert/Dropbox/Coding_zone/Verilog/ECE342_Computer_Hardware_Lab/Lab_2/Basic Array Multiplier/add_input_tb.v
+Z16 FC:/Users/albert/Dropbox/Coding_zone/Verilog/ECE342_Computer_Hardware_Lab/Lab_2/Basic Array Multiplier/add_input_tb.v
+L0 9
+R7
+r1
+31
+Z17 !s90 -reportprogress|300|-work|work|-nocovercells|C:/Users/albert/Dropbox/Coding_zone/Verilog/ECE342_Computer_Hardware_Lab/Lab_2/Basic Array Multiplier/add_input_tb.v|
+R9
+R10
+Z18 !s107 C:/Users/albert/Dropbox/Coding_zone/Verilog/ECE342_Computer_Hardware_Lab/Lab_2/Basic Array Multiplier/add_input_tb.v|
+!s85 0
+!s108 1336016479.388000
+!s101 -O0
+vArray_Mutiplier
+Z19 !s100 Uc6>o<`HTKI[FGU[d=JGh1
+Z20 IQ:JZRB4E3T>Bb:`dS_<cN0
+Z21 VMaT<jd=@eU=5=U<`fmeML1
+R4
+w1329454525
+Z22 8C:/Users/albert/Dropbox/Coding_zone/Verilog/ECE342_Computer_Hardware_Lab/Lab_2/Basic Array Multiplier/Array_Mutiplier.v
+Z23 FC:/Users/albert/Dropbox/Coding_zone/Verilog/ECE342_Computer_Hardware_Lab/Lab_2/Basic Array Multiplier/Array_Mutiplier.v
+L0 1
+R7
+r1
+31
+Z24 !s90 -reportprogress|300|-work|work|-nocovercells|C:/Users/albert/Dropbox/Coding_zone/Verilog/ECE342_Computer_Hardware_Lab/Lab_2/Basic Array Multiplier/Array_Mutiplier.v|
+R9
+R10
+Z25 n@array_@mutiplier
+Z26 !s107 C:/Users/albert/Dropbox/Coding_zone/Verilog/ECE342_Computer_Hardware_Lab/Lab_2/Basic Array Multiplier/Array_Mutiplier.v|
+!s85 0
+!s108 1336016481.599000
+!s101 -O0
+vArray_Mutiplier_tb
+Z27 !s100 94ilD<PI?jL1;@H<1E0n33
+Z28 IMVKkf[0dRM6MdVJPgBZS=2
+Z29 V=^4:86c<4=90:d7]N1L?O3
+R4
+w1329455045
+Z30 8C:/Users/albert/Dropbox/Coding_zone/Verilog/ECE342_Computer_Hardware_Lab/Lab_2/Basic Array Multiplier/Array_Mutiplier_tb.v
+Z31 FC:/Users/albert/Dropbox/Coding_zone/Verilog/ECE342_Computer_Hardware_Lab/Lab_2/Basic Array Multiplier/Array_Mutiplier_tb.v
+L0 9
+R7
+r1
+31
+Z32 !s90 -reportprogress|300|-work|work|-nocovercells|C:/Users/albert/Dropbox/Coding_zone/Verilog/ECE342_Computer_Hardware_Lab/Lab_2/Basic Array Multiplier/Array_Mutiplier_tb.v|
+R9
+R10
+Z33 n@array_@mutiplier_tb
+Z34 !s107 C:/Users/albert/Dropbox/Coding_zone/Verilog/ECE342_Computer_Hardware_Lab/Lab_2/Basic Array Multiplier/Array_Mutiplier_tb.v|
+!s85 0
+!s108 1336016484.080000
+!s101 -O0
+vbooth_encode
+Z35 !s100 0SO8KTch@Z]HnhZ3MAAmP1
+Z36 I2<RJa1Q]?i_3ZTGYJS;QY0
+Z37 VzGKX?zhS4jjNzJlhCg=MD2
+R4
+w1329434644
+Z38 8C:/Users/albert/Dropbox/Coding_zone/Verilog/ECE342_Computer_Hardware_Lab/Lab_2/Basic Array Multiplier/Booth_encode.v
+Z39 FC:/Users/albert/Dropbox/Coding_zone/Verilog/ECE342_Computer_Hardware_Lab/Lab_2/Basic Array Multiplier/Booth_encode.v
+L0 1
+R7
+r1
+31
+Z40 !s90 -reportprogress|300|-work|work|-nocovercells|C:/Users/albert/Dropbox/Coding_zone/Verilog/ECE342_Computer_Hardware_Lab/Lab_2/Basic Array Multiplier/Booth_encode.v|
+R9
+R10
+!s85 0
+!s108 1336016494.650000
+Z41 !s107 C:/Users/albert/Dropbox/Coding_zone/Verilog/ECE342_Computer_Hardware_Lab/Lab_2/Basic Array Multiplier/Booth_encode.v|
+!s101 -O0
+vfulladd
+Z42 !s100 Y?W=4Q;jfSQ1WI[MF`aQD2
+Z43 I_?oYz5IOVNWdz23>KeeHe3
+Z44 VNNCgboY6GROBCUf=oc2l52
+R4
+w1296713559
+Z45 8C:/Users/albert/Dropbox/Coding_zone/Verilog/ECE342_Computer_Hardware_Lab/Lab_2/Basic Array Multiplier/fulladd.v
+Z46 FC:/Users/albert/Dropbox/Coding_zone/Verilog/ECE342_Computer_Hardware_Lab/Lab_2/Basic Array Multiplier/fulladd.v
+L0 1
+R7
+r1
+!s85 0
+31
+!s108 1336016496.584000
+!s107 C:/Users/albert/Dropbox/Coding_zone/Verilog/ECE342_Computer_Hardware_Lab/Lab_2/Basic Array Multiplier/fulladd.v|
+Z47 !s90 -reportprogress|300|-work|work|-nocovercells|C:/Users/albert/Dropbox/Coding_zone/Verilog/ECE342_Computer_Hardware_Lab/Lab_2/Basic Array Multiplier/fulladd.v|
+!s101 -O0
+R9
+R10
+vpll
+I`5gXN1z7LCnh<OaHMb?na1
+VZDAAD9;JmoC1mYkXanTl:2
+Z48 dC:\Users\albert\Documents\Quartus_workspace\Pll\simulation\modelsim
+w1336013904
+8C:/Users/albert/Documents/Quartus_workspace/Pll/simulation/modelsim/pll.vo
+FC:/Users/albert/Documents/Quartus_workspace/Pll/simulation/modelsim/pll.vo
+L0 31
+R7
+r1
+31
+o-work work -O0
+!s100 0KSERV44UOj2L86J57nn51
+!s85 0
+!s108 1336014922.650000
+!s107 C:/Users/albert/Documents/Quartus_workspace/Pll/simulation/modelsim/pll.vo|
+!s90 -reportprogress|300|-work|work|C:/Users/albert/Documents/Quartus_workspace/Pll/simulation/modelsim/pll.vo|
+!s101 -O0

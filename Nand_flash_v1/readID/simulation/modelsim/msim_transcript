@@ -1,0 +1,157 @@
+# Reading C:/altera/10.0/modelsim_ae/tcl/vsim/pref.tcl 
+# do readID_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\10.0\modelsim_ae\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\10.0\modelsim_ae\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/albert/Google\ Drive/Coding_zone/Verilog/Quartus_workspace/Nand_flash_v1/readID {C:/Users/albert/Google Drive/Coding_zone/Verilog/Quartus_workspace/Nand_flash_v1/readID/readID.v}
+# Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
+# -- Compiling module readID
+# 
+# Top level modules:
+# 	readID
+# vlog -vlog01compat -work work +incdir+C:/Users/albert/Google\ Drive/Coding_zone/Verilog/Quartus_workspace/Nand_flash_v1/toggle {C:/Users/albert/Google Drive/Coding_zone/Verilog/Quartus_workspace/Nand_flash_v1/toggle/toggle.v}
+# Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
+# -- Compiling module toggle
+# 
+# Top level modules:
+# 	toggle
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/albert/Google\ Drive/Coding_zone/Verilog/Quartus_workspace/Nand_flash_v1/readID {C:/Users/albert/Google Drive/Coding_zone/Verilog/Quartus_workspace/Nand_flash_v1/readID/readID_tb.v}
+# Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
+# -- Compiling module readID_tb
+# 
+# Top level modules:
+# 	readID_tb
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc" readID_tb
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L cycloneii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps readID_tb 
+# //  ModelSim ALTERA 6.5e Feb 27 2010 
+# //
+# //  Copyright 1991-2010 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading work.readID_tb
+# Loading work.readID
+# ** Warning: (vsim-3009) [TSCALE] - Module 'readID' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /readID_tb/readID
+# Loading work.toggle
+# ** Warning: (vsim-3009) [TSCALE] - Module 'toggle' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /readID_tb/readID/toggle
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body
+# run -all
+# 		time=                   0,	clk=0,	state=x,	output_data=0xxx,	toggleDone_tb=x,	IDread_done=x,	dummy_cnt_tb=x,	IDread_cnt_tb=xx,	DevID_tb=xxxxxxxx,	outputVEC_tb=xxxxx
+# 		time=                  10,	clk=1,	state=0,	output_data=0x00,	toggleDone_tb=x,	IDread_done=0,	dummy_cnt_tb=x,	IDread_cnt_tb=xx,	DevID_tb=00000000,	outputVEC_tb=xxxxx
+# 		time=                  20,	clk=0,	state=0,	output_data=0x00,	toggleDone_tb=x,	IDread_done=0,	dummy_cnt_tb=x,	IDread_cnt_tb=xx,	DevID_tb=00000000,	outputVEC_tb=xxxxx
+# 		time=                  30,	clk=1,	state=0,	output_data=0x00,	toggleDone_tb=x,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=00,	DevID_tb=00000000,	outputVEC_tb=xxxxx
+# 		time=                  40,	clk=0,	state=0,	output_data=0x00,	toggleDone_tb=x,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=00,	DevID_tb=00000000,	outputVEC_tb=xxxxx
+# 		time=                  50,	clk=1,	state=0,	output_data=0x00,	toggleDone_tb=x,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=00,	DevID_tb=00000000,	outputVEC_tb=00000
+# 		time=                  60,	clk=0,	state=0,	output_data=0x00,	toggleDone_tb=x,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=00,	DevID_tb=00000000,	outputVEC_tb=00000
+# 		time=                  70,	clk=1,	state=0,	output_data=0x00,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=00,	DevID_tb=00000000,	outputVEC_tb=00000
+# 		time=                  80,	clk=0,	state=0,	output_data=0x00,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=00,	DevID_tb=00000000,	outputVEC_tb=00000
+# 		time=                  90,	clk=1,	state=0,	output_data=0x00,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=00,	DevID_tb=00000000,	outputVEC_tb=00000
+# 		time=                 100,	clk=0,	state=0,	output_data=0x00,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=00,	DevID_tb=00000000,	outputVEC_tb=00000
+# 		time=                 110,	clk=1,	state=0,	output_data=0x00,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=00,	DevID_tb=00000000,	outputVEC_tb=00000
+# 		time=                 120,	clk=0,	state=0,	output_data=0x00,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=00,	DevID_tb=00000000,	outputVEC_tb=00000
+# 		time=                 130,	clk=1,	state=0,	output_data=0x00,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=00,	DevID_tb=00000000,	outputVEC_tb=00000
+# 		time=                 140,	clk=0,	state=0,	output_data=0x00,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=00,	DevID_tb=00000000,	outputVEC_tb=00000
+# 		time=                 150,	clk=1,	state=0,	output_data=0x00,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=00,	DevID_tb=00000000,	outputVEC_tb=00000
+# 		time=                 160,	clk=0,	state=0,	output_data=0x00,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=00,	DevID_tb=00000000,	outputVEC_tb=00000
+# 		time=                 170,	clk=1,	state=0,	output_data=0x00,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=00,	DevID_tb=00000000,	outputVEC_tb=00000
+# 		time=                 180,	clk=0,	state=0,	output_data=0x00,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=00,	DevID_tb=00000000,	outputVEC_tb=00000
+# 		time=                 190,	clk=1,	state=0,	output_data=0x00,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=00,	DevID_tb=00000000,	outputVEC_tb=00000
+# 		input_cmd=90
+# 		time=                 200,	clk=0,	state=0,	output_data=0x90,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=00,	DevID_tb=00000000,	outputVEC_tb=00000
+# 		time=                 210,	clk=1,	state=1,	output_data=0x90,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=00,	DevID_tb=00000000,	outputVEC_tb=00000
+# 		time=                 220,	clk=0,	state=1,	output_data=0x90,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=00,	DevID_tb=00000000,	outputVEC_tb=00000
+# 		time=                 230,	clk=1,	state=1,	output_data=0x90,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=00,	DevID_tb=00000000,	outputVEC_tb=10010
+# 		time=                 240,	clk=0,	state=1,	output_data=0x90,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=00,	DevID_tb=00000000,	outputVEC_tb=10010
+# 		time=                 250,	clk=1,	state=1,	output_data=0x90,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=00,	DevID_tb=00000000,	outputVEC_tb=10010
+# 		time=                 260,	clk=0,	state=1,	output_data=0x90,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=00,	DevID_tb=00000000,	outputVEC_tb=10010
+# 		time=                 270,	clk=1,	state=1,	output_data=0x90,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=1,	IDread_cnt_tb=00,	DevID_tb=00000000,	outputVEC_tb=10010
+# 		time=                 280,	clk=0,	state=1,	output_data=0x90,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=1,	IDread_cnt_tb=00,	DevID_tb=00000000,	outputVEC_tb=10010
+# 		time=                 290,	clk=1,	state=1,	output_data=0x90,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=00,	DevID_tb=00000000,	outputVEC_tb=11010
+# 		time=                 300,	clk=0,	state=1,	output_data=0x90,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=00,	DevID_tb=00000000,	outputVEC_tb=11010
+# 		time=                 310,	clk=1,	state=1,	output_data=0x90,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=00,	DevID_tb=00000000,	outputVEC_tb=11010
+# 		time=                 320,	clk=0,	state=1,	output_data=0x90,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=00,	DevID_tb=00000000,	outputVEC_tb=11010
+# 		time=                 330,	clk=1,	state=1,	output_data=0x00,	toggleDone_tb=1,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=00,	DevID_tb=00000000,	outputVEC_tb=00000
+# 		time=                 340,	clk=0,	state=1,	output_data=0x00,	toggleDone_tb=1,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=00,	DevID_tb=00000000,	outputVEC_tb=00000
+# 		time=                 350,	clk=1,	state=2,	output_data=0x00,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=00,	DevID_tb=00000000,	outputVEC_tb=00000
+# 		time=                 360,	clk=0,	state=2,	output_data=0x00,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=00,	DevID_tb=00000000,	outputVEC_tb=00000
+# 		time=                 370,	clk=1,	state=2,	output_data=0x00,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=00,	DevID_tb=00000000,	outputVEC_tb=10010
+# 		time=                 380,	clk=0,	state=2,	output_data=0x00,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=00,	DevID_tb=00000000,	outputVEC_tb=10010
+# 		time=                 390,	clk=1,	state=2,	output_data=0x00,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=00,	DevID_tb=00000000,	outputVEC_tb=10010
+# 		time=                 400,	clk=0,	state=2,	output_data=0x00,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=00,	DevID_tb=00000000,	outputVEC_tb=10010
+# 		time=                 410,	clk=1,	state=2,	output_data=0x00,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=1,	IDread_cnt_tb=00,	DevID_tb=00000000,	outputVEC_tb=10010
+# 		time=                 420,	clk=0,	state=2,	output_data=0x00,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=1,	IDread_cnt_tb=00,	DevID_tb=00000000,	outputVEC_tb=10010
+# 		time=                 430,	clk=1,	state=2,	output_data=0x00,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=00,	DevID_tb=00000000,	outputVEC_tb=11100
+# 		time=                 440,	clk=0,	state=2,	output_data=0x00,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=00,	DevID_tb=00000000,	outputVEC_tb=11100
+# 		time=                 450,	clk=1,	state=2,	output_data=0x00,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=00,	DevID_tb=00000000,	outputVEC_tb=11100
+# 		time=                 460,	clk=0,	state=2,	output_data=0x00,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=00,	DevID_tb=00000000,	outputVEC_tb=11100
+# 		time=                 470,	clk=1,	state=2,	output_data=0x00,	toggleDone_tb=1,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=00,	DevID_tb=00000000,	outputVEC_tb=00000
+# 		time=                 480,	clk=0,	state=2,	output_data=0x00,	toggleDone_tb=1,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=00,	DevID_tb=00000000,	outputVEC_tb=00000
+# 		time=                 490,	clk=1,	state=3,	output_data=0x00,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=00,	DevID_tb=00000000,	outputVEC_tb=00000
+# 		time=                 500,	clk=0,	state=3,	output_data=0x00,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=00,	DevID_tb=00000000,	outputVEC_tb=00000
+# 		time=                 510,	clk=1,	state=3,	output_data=0x00,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=00,	DevID_tb=00000000,	outputVEC_tb=00001
+# 		time=                 520,	clk=0,	state=3,	output_data=0x00,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=00,	DevID_tb=00000000,	outputVEC_tb=00001
+# 		time=                 530,	clk=1,	state=3,	output_data=0x00,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=00,	DevID_tb=00000000,	outputVEC_tb=00001
+# 		time=                 540,	clk=0,	state=3,	output_data=0x00,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=00,	DevID_tb=00000000,	outputVEC_tb=00001
+# 		time=                 550,	clk=1,	state=3,	output_data=0x00,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=1,	IDread_cnt_tb=00,	DevID_tb=10010000,	outputVEC_tb=00001
+# 		time=                 560,	clk=0,	state=3,	output_data=0x00,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=1,	IDread_cnt_tb=00,	DevID_tb=10010000,	outputVEC_tb=00001
+# 		time=                 570,	clk=1,	state=3,	output_data=0x00,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=01,	DevID_tb=10010000,	outputVEC_tb=00000
+# 		time=                 580,	clk=0,	state=3,	output_data=0x00,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=01,	DevID_tb=10010000,	outputVEC_tb=00000
+# 		time=                 590,	clk=1,	state=3,	output_data=0x00,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=01,	DevID_tb=10010000,	outputVEC_tb=00000
+# 		time=                 600,	clk=0,	state=3,	output_data=0x00,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=01,	DevID_tb=10010000,	outputVEC_tb=00000
+# 		time=                 610,	clk=1,	state=3,	output_data=0x00,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=01,	DevID_tb=10010000,	outputVEC_tb=00001
+# 		time=                 620,	clk=0,	state=3,	output_data=0x00,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=01,	DevID_tb=10010000,	outputVEC_tb=00001
+# 		time=                 630,	clk=1,	state=3,	output_data=0x00,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=01,	DevID_tb=10010000,	outputVEC_tb=00001
+# 		time=                 640,	clk=0,	state=3,	output_data=0x00,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=01,	DevID_tb=10010000,	outputVEC_tb=00001
+# 		time=                 650,	clk=1,	state=3,	output_data=0x00,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=1,	IDread_cnt_tb=01,	DevID_tb=10010000,	outputVEC_tb=00001
+# 		time=                 660,	clk=0,	state=3,	output_data=0x00,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=1,	IDread_cnt_tb=01,	DevID_tb=10010000,	outputVEC_tb=00001
+# 		time=                 670,	clk=1,	state=3,	output_data=0x00,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=10,	DevID_tb=10010000,	outputVEC_tb=00000
+# 		time=                 680,	clk=0,	state=3,	output_data=0x00,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=10,	DevID_tb=10010000,	outputVEC_tb=00000
+# 		time=                 690,	clk=1,	state=3,	output_data=0x00,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=10,	DevID_tb=10010000,	outputVEC_tb=00000
+# 		time=                 700,	clk=0,	state=3,	output_data=0x00,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=10,	DevID_tb=10010000,	outputVEC_tb=00000
+# 		time=                 710,	clk=1,	state=3,	output_data=0x00,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=10,	DevID_tb=10010000,	outputVEC_tb=00001
+# 		time=                 720,	clk=0,	state=3,	output_data=0x00,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=10,	DevID_tb=10010000,	outputVEC_tb=00001
+# 		time=                 730,	clk=1,	state=3,	output_data=0x00,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=10,	DevID_tb=10010000,	outputVEC_tb=00001
+# 		time=                 740,	clk=0,	state=3,	output_data=0x00,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=10,	DevID_tb=10010000,	outputVEC_tb=00001
+# 		time=                 750,	clk=1,	state=3,	output_data=0x00,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=1,	IDread_cnt_tb=10,	DevID_tb=10010000,	outputVEC_tb=00001
+# 		time=                 760,	clk=0,	state=3,	output_data=0x00,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=1,	IDread_cnt_tb=10,	DevID_tb=10010000,	outputVEC_tb=00001
+# 		time=                 770,	clk=1,	state=3,	output_data=0x00,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=11,	DevID_tb=10010000,	outputVEC_tb=00000
+# 		time=                 780,	clk=0,	state=3,	output_data=0x00,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=11,	DevID_tb=10010000,	outputVEC_tb=00000
+# 		time=                 790,	clk=1,	state=3,	output_data=0x00,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=11,	DevID_tb=10010000,	outputVEC_tb=00000
+# 		time=                 800,	clk=0,	state=3,	output_data=0x00,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=11,	DevID_tb=10010000,	outputVEC_tb=00000
+# 		time=                 810,	clk=1,	state=3,	output_data=0x00,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=11,	DevID_tb=10010000,	outputVEC_tb=00001
+# 		time=                 820,	clk=0,	state=3,	output_data=0x00,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=11,	DevID_tb=10010000,	outputVEC_tb=00001
+# 		time=                 830,	clk=1,	state=3,	output_data=0x00,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=11,	DevID_tb=10010000,	outputVEC_tb=00001
+# 		time=                 840,	clk=0,	state=3,	output_data=0x00,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=11,	DevID_tb=10010000,	outputVEC_tb=00001
+# 		time=                 850,	clk=1,	state=3,	output_data=0x00,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=1,	IDread_cnt_tb=11,	DevID_tb=10010000,	outputVEC_tb=00001
+# 		time=                 860,	clk=0,	state=3,	output_data=0x00,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=1,	IDread_cnt_tb=11,	DevID_tb=10010000,	outputVEC_tb=00001
+# 		time=                 870,	clk=1,	state=3,	output_data=0x00,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=00,	DevID_tb=10010000,	outputVEC_tb=00000
+# 		time=                 880,	clk=0,	state=3,	output_data=0x00,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=00,	DevID_tb=10010000,	outputVEC_tb=00000
+# 		time=                 890,	clk=1,	state=3,	output_data=0x00,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=00,	DevID_tb=10010000,	outputVEC_tb=00000
+# 		time=                 900,	clk=0,	state=3,	output_data=0x00,	toggleDone_tb=0,	IDread_done=0,	dummy_cnt_tb=0,	IDread_cnt_tb=00,	DevID_tb=10010000,	outputVEC_tb=00000
+# 		time=                 910,	clk=1,	state=3,	output_data=0x00,	toggleDone_tb=1,	IDread_done=1,	dummy_cnt_tb=0,	IDread_cnt_tb=00,	DevID_tb=10010000,	outputVEC_tb=00000
+# 		time=                 920,	clk=0,	state=3,	output_data=0x00,	toggleDone_tb=1,	IDread_done=1,	dummy_cnt_tb=0,	IDread_cnt_tb=00,	DevID_tb=10010000,	outputVEC_tb=00000
+# 		time=                 930,	clk=1,	state=0,	output_data=0x90,	toggleDone_tb=0,	IDread_done=1,	dummy_cnt_tb=0,	IDread_cnt_tb=00,	DevID_tb=10010000,	outputVEC_tb=00000
+# 		time=                 940,	clk=0,	state=0,	output_data=0x90,	toggleDone_tb=0,	IDread_done=1,	dummy_cnt_tb=0,	IDread_cnt_tb=00,	DevID_tb=10010000,	outputVEC_tb=00000
+# Break in Module readID_tb at C:/Users/albert/Google Drive/Coding_zone/Verilog/Quartus_workspace/Nand_flash_v1/readID/readID_tb.v line 73
+# Simulation Breakpoint: Break in Module readID_tb at C:/Users/albert/Google Drive/Coding_zone/Verilog/Quartus_workspace/Nand_flash_v1/readID/readID_tb.v line 73
+# MACRO ./readID_run_msim_rtl_verilog.do PAUSED at line 18

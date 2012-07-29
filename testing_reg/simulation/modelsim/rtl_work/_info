@@ -1,0 +1,35 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\albert\Documents\Quartus_workspace\testing_reg\simulation\modelsim
+vtesting_reg
+I0?6o0VfeLji3h>Tb03:[]1
+VFACYEd3az`PY5lJ]9[^ad2
+w1341881712
+8C:/Users/albert/Documents/Quartus_workspace/testing_reg/testing_reg.v
+FC:/Users/albert/Documents/Quartus_workspace/testing_reg/testing_reg.v
+L0 1
+Z1 OV;L;6.5e;42
+r1
+31
+Z2 o-vlog01compat -work work -O0
+!s100 ^?^dh^jj9^88f@[I188;b3
+!s85 0
+!s101 -O0
+Z3 !s92 -vlog01compat -work work +incdir+C:/Users/albert/Documents/Quartus_workspace/testing_reg -O0
+vtesting_reg_tb
+!s100 Ha5]5Vm96O<:_fl1>bjdd2
+I[I]R=Uc4<l>298[m@Kf`^2
+VejW`Kd<R]coOVQ]CXF5TA0
+w1341881713
+8C:/Users/albert/Documents/Quartus_workspace/testing_reg/testing_reg_tb.v
+FC:/Users/albert/Documents/Quartus_workspace/testing_reg/testing_reg_tb.v
+L0 4
+R1
+r1
+!s85 0
+31
+!s101 -O0
+R2
+R3

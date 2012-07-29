@@ -1,0 +1,35 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\albert\Google Drive\Coding_zone\Verilog\Quartus_workspace\Nand_flash_v1\toggle\simulation\modelsim
+vmy_toggle_tb
+!s100 ;UP[LgY3J9IbaQK=DD0lc0
+ILFKO64T@cHFR2?]I^=B?=3
+Vf_S8zGm4jSFB8X5OI[QF:2
+w1343509606
+8C:/Users/albert/Google Drive/Coding_zone/Verilog/Quartus_workspace/Nand_flash_v1/toggle/my_toggle_tb.v
+FC:/Users/albert/Google Drive/Coding_zone/Verilog/Quartus_workspace/Nand_flash_v1/toggle/my_toggle_tb.v
+L0 15
+Z1 OV;L;6.5e;42
+r1
+!s85 0
+31
+!s101 -O0
+Z2 o-vlog01compat -work work -O0
+!s92 -vlog01compat -work work {+incdir+C:/Users/albert/Google Drive/Coding_zone/Verilog/Quartus_workspace/Nand_flash_v1/toggle} -O0
+vtoggle
+I`5H]EfTnJSKz6d=82kN781
+Vn4<09fF;N>CFh<ESLgc7o2
+w1343509621
+8toggle.vo
+Ftoggle.vo
+L0 31
+R1
+r1
+31
+R2
+!s100 TO?gLDPzDMd`jJj>gc0jP1
+!s85 0
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+. -O0

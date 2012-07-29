@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue May 29 01:31:51 2012
+Quartus II Version : 10.0 Build 218 06/27/2010 SJ Full Version
+Revision Name : nand_write
+Top-level Entity Name : nand_write
+Family : Cyclone II
+Total logic elements : 150
+    Total combinational functions : 148
+    Dedicated logic registers : 45
+Total registers : 45
+Total pins : 66
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 1

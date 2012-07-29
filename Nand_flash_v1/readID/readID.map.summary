@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sun Jul 29 00:59:59 2012
+Quartus II Version : 10.0 Build 218 06/27/2010 SJ Full Version
+Revision Name : readID
+Top-level Entity Name : readID
+Family : Cyclone II
+Total logic elements : 92
+    Total combinational functions : 90
+    Dedicated logic registers : 30
+Total registers : 30
+Total pins : 38
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

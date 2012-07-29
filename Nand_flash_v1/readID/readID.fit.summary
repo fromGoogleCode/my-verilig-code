@@ -1,0 +1,16 @@
+Fitter Status : Successful - Sun Jul 29 01:00:06 2012
+Quartus II Version : 10.0 Build 218 06/27/2010 SJ Full Version
+Revision Name : readID
+Top-level Entity Name : readID
+Family : Cyclone II
+Device : EP2C35F672C6
+Timing Models : Final
+Total logic elements : 90 / 33,216 ( < 1 % )
+    Total combinational functions : 90 / 33,216 ( < 1 % )
+    Dedicated logic registers : 30 / 33,216 ( < 1 % )
+Total registers : 30
+Total pins : 38 / 475 ( 8 % )
+Total virtual pins : 0
+Total memory bits : 0 / 483,840 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 70 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )
