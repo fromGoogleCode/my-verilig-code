@@ -1,0 +1,716 @@
+$date
+	Sat Jul 28 18:03:36 2012
+$end
+$version
+	ModelSim Version 6.5e
+$end
+$timescale
+	1ps
+$end
+$scope module my_toggle_tb $end
+$var reg 1 ! CLOCK_50 $end
+$var reg 1 " reset $end
+$var reg 1 # enable $end
+$var reg 12 $ cntUPTO [11:0] $end
+$var reg 5 % outputVEC1 [4:0] $end
+$var reg 5 & outputVEC2 [4:0] $end
+$var wire 1 ' done $end
+$var wire 1 ( outputVEC [4] $end
+$var wire 1 ) outputVEC [3] $end
+$var wire 1 * outputVEC [2] $end
+$var wire 1 + outputVEC [1] $end
+$var wire 1 , outputVEC [0] $end
+$var wire 1 - state_tb [1] $end
+$var wire 1 . state_tb [0] $end
+$var wire 1 / delayCNT_tb [3] $end
+$var wire 1 0 delayCNT_tb [2] $end
+$var wire 1 1 delayCNT_tb [1] $end
+$var wire 1 2 delayCNT_tb [0] $end
+$var wire 1 3 internalCNT_tb [11] $end
+$var wire 1 4 internalCNT_tb [10] $end
+$var wire 1 5 internalCNT_tb [9] $end
+$var wire 1 6 internalCNT_tb [8] $end
+$var wire 1 7 internalCNT_tb [7] $end
+$var wire 1 8 internalCNT_tb [6] $end
+$var wire 1 9 internalCNT_tb [5] $end
+$var wire 1 : internalCNT_tb [4] $end
+$var wire 1 ; internalCNT_tb [3] $end
+$var wire 1 < internalCNT_tb [2] $end
+$var wire 1 = internalCNT_tb [1] $end
+$var wire 1 > internalCNT_tb [0] $end
+$var wire 1 ? internalCNT_out [11] $end
+$var wire 1 @ internalCNT_out [10] $end
+$var wire 1 A internalCNT_out [9] $end
+$var wire 1 B internalCNT_out [8] $end
+$var wire 1 C internalCNT_out [7] $end
+$var wire 1 D internalCNT_out [6] $end
+$var wire 1 E internalCNT_out [5] $end
+$var wire 1 F internalCNT_out [4] $end
+$var wire 1 G internalCNT_out [3] $end
+$var wire 1 H internalCNT_out [2] $end
+$var wire 1 I internalCNT_out [1] $end
+$var wire 1 J internalCNT_out [0] $end
+$var wire 1 K clk200_tb $end
+$scope module toggle $end
+$var parameter 2 L toggleWAIT $end
+$var parameter 2 M toggle1 $end
+$var parameter 2 N toggle2 $end
+$var parameter 2 O toggleDONE $end
+$var parameter 32 P TOGGEL_SETUP $end
+$var parameter 32 Q TOGGEL_HOLD $end
+$var wire 1 R clk $end
+$var wire 1 S reset $end
+$var wire 1 T enable $end
+$var wire 1 U cntUPTO [11] $end
+$var wire 1 V cntUPTO [10] $end
+$var wire 1 W cntUPTO [9] $end
+$var wire 1 X cntUPTO [8] $end
+$var wire 1 Y cntUPTO [7] $end
+$var wire 1 Z cntUPTO [6] $end
+$var wire 1 [ cntUPTO [5] $end
+$var wire 1 \ cntUPTO [4] $end
+$var wire 1 ] cntUPTO [3] $end
+$var wire 1 ^ cntUPTO [2] $end
+$var wire 1 _ cntUPTO [1] $end
+$var wire 1 ` cntUPTO [0] $end
+$var wire 1 a outputVEC1 [4] $end
+$var wire 1 b outputVEC1 [3] $end
+$var wire 1 c outputVEC1 [2] $end
+$var wire 1 d outputVEC1 [1] $end
+$var wire 1 e outputVEC1 [0] $end
+$var wire 1 f outputVEC2 [4] $end
+$var wire 1 g outputVEC2 [3] $end
+$var wire 1 h outputVEC2 [2] $end
+$var wire 1 i outputVEC2 [1] $end
+$var wire 1 j outputVEC2 [0] $end
+$var wire 1 ' done $end
+$var reg 5 k outputVEC [4:0] $end
+$var wire 1 ? internalCNT_out [11] $end
+$var wire 1 @ internalCNT_out [10] $end
+$var wire 1 A internalCNT_out [9] $end
+$var wire 1 B internalCNT_out [8] $end
+$var wire 1 C internalCNT_out [7] $end
+$var wire 1 D internalCNT_out [6] $end
+$var wire 1 E internalCNT_out [5] $end
+$var wire 1 F internalCNT_out [4] $end
+$var wire 1 G internalCNT_out [3] $end
+$var wire 1 H internalCNT_out [2] $end
+$var wire 1 I internalCNT_out [1] $end
+$var wire 1 J internalCNT_out [0] $end
+$var wire 1 - state_tb [1] $end
+$var wire 1 . state_tb [0] $end
+$var wire 1 K clk200_tb $end
+$var wire 1 / delayCNT_tb [3] $end
+$var wire 1 0 delayCNT_tb [2] $end
+$var wire 1 1 delayCNT_tb [1] $end
+$var wire 1 2 delayCNT_tb [0] $end
+$var wire 1 3 internalCNT_tb [11] $end
+$var wire 1 4 internalCNT_tb [10] $end
+$var wire 1 5 internalCNT_tb [9] $end
+$var wire 1 6 internalCNT_tb [8] $end
+$var wire 1 7 internalCNT_tb [7] $end
+$var wire 1 8 internalCNT_tb [6] $end
+$var wire 1 9 internalCNT_tb [5] $end
+$var wire 1 : internalCNT_tb [4] $end
+$var wire 1 ; internalCNT_tb [3] $end
+$var wire 1 < internalCNT_tb [2] $end
+$var wire 1 = internalCNT_tb [1] $end
+$var wire 1 > internalCNT_tb [0] $end
+$var reg 2 l state_reg [1:0] $end
+$var reg 2 m state_next [1:0] $end
+$var reg 12 n internalCNT_reg [11:0] $end
+$var reg 12 o internalCNT_next [11:0] $end
+$var reg 4 p delayCNT_reg [3:0] $end
+$var reg 4 q delayCNT_next [3:0] $end
+$var reg 1 r toggleDone_reg $end
+$var reg 1 s toggleDone_next $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 L
+b1 M
+b10 N
+b11 O
+b11 P
+b10 Q
+0!
+0"
+0#
+b0 $
+b0 %
+b0 &
+bx k
+bx l
+b0 m
+bx n
+bx o
+bx p
+bx q
+xr
+xs
+x'
+x,
+x+
+x*
+x)
+x(
+x.
+x-
+x2
+x1
+x0
+x/
+x>
+x=
+x<
+x;
+x:
+x9
+x8
+x7
+x6
+x5
+x4
+x3
+xJ
+xI
+xH
+xG
+xF
+xE
+xD
+xC
+xB
+xA
+x@
+x?
+zK
+0j
+0i
+0h
+0g
+0f
+0e
+0d
+0c
+0b
+0a
+0`
+0_
+0^
+0]
+0\
+0[
+0Z
+0Y
+0X
+0W
+0V
+0U
+0T
+0S
+0R
+$end
+#10000
+1!
+1R
+b0 l
+0.
+0-
+b0 k
+b0 q
+b0 o
+0s
+0,
+0+
+0*
+0)
+0(
+#20000
+0!
+0R
+#30000
+1!
+1R
+b0 n
+b0 p
+0r
+02
+01
+00
+0/
+0J
+0I
+0H
+0G
+0F
+0E
+0D
+0C
+0B
+0A
+0@
+0?
+0>
+0=
+0<
+0;
+0:
+09
+08
+07
+06
+05
+04
+03
+0'
+#40000
+0!
+0R
+#50000
+1#
+b1 $
+b10010 %
+b11010 &
+1!
+1T
+1i
+1g
+1f
+1d
+1a
+1`
+1R
+b1 m
+#60000
+0!
+0R
+#70000
+0#
+1!
+0T
+1R
+b0 m
+b1 l
+1.
+b1 m
+b10010 k
+b1 q
+1+
+1(
+#80000
+0!
+0R
+#90000
+1!
+1R
+b1 p
+12
+b10 q
+#100000
+0!
+0R
+#110000
+1!
+1R
+b10 p
+02
+11
+b11 q
+b10 m
+b1 o
+#120000
+0!
+0R
+#130000
+1!
+1R
+b10 l
+b1 n
+b11 p
+12
+1J
+1>
+0.
+1-
+b11010 k
+b100 q
+1)
+#140000
+0!
+0R
+#150000
+1!
+1R
+b100 p
+02
+01
+10
+b101 q
+b11 m
+1s
+#160000
+0!
+0R
+#170000
+1!
+1R
+b11 l
+b101 p
+1r
+12
+1.
+1'
+b0 k
+b0 o
+b0 q
+b0 m
+0s
+0+
+0)
+0(
+#180000
+0!
+0R
+#190000
+1#
+b100 $
+b11010 %
+b10010 &
+1!
+1T
+0g
+1b
+0`
+1^
+1R
+b11 m
+b1 o
+b101 q
+1s
+b0 o
+b0 q
+b0 l
+b0 n
+b0 p
+0r
+02
+00
+0J
+0>
+0.
+0-
+0'
+b0 m
+0s
+b1 m
+#200000
+0!
+0R
+#210000
+0#
+1!
+0T
+1R
+b0 m
+b1 l
+1.
+b1 m
+b11010 k
+b1 q
+1+
+1)
+1(
+#220000
+0!
+0R
+#230000
+1!
+1R
+b1 p
+12
+b10 q
+#240000
+0!
+0R
+#250000
+1!
+1R
+b10 p
+02
+11
+b11 q
+b10 m
+b1 o
+#260000
+0!
+0R
+#270000
+1!
+1R
+b10 l
+b1 n
+b11 p
+12
+1J
+1>
+0.
+1-
+b10010 k
+b100 q
+0)
+#280000
+0!
+0R
+#290000
+1!
+1R
+b100 p
+02
+01
+10
+b101 q
+b1 m
+b0 q
+#300000
+0!
+0R
+#310000
+1!
+1R
+b1 l
+b0 p
+00
+1.
+0-
+b11010 k
+b1 q
+1)
+#320000
+0!
+0R
+#330000
+1!
+1R
+b1 p
+12
+b10 q
+#340000
+0!
+0R
+#350000
+1!
+1R
+b10 p
+02
+11
+b11 q
+b10 m
+b10 o
+#360000
+0!
+0R
+#370000
+1!
+1R
+b10 l
+b10 n
+b11 p
+12
+0J
+1I
+0>
+1=
+0.
+1-
+b10010 k
+b100 q
+0)
+#380000
+0!
+0R
+#390000
+1!
+1R
+b100 p
+02
+01
+10
+b101 q
+b1 m
+b0 q
+#400000
+0!
+0R
+#410000
+1!
+1R
+b1 l
+b0 p
+00
+1.
+0-
+b11010 k
+b1 q
+1)
+#420000
+0!
+0R
+#430000
+1!
+1R
+b1 p
+12
+b10 q
+#440000
+0!
+0R
+#450000
+1!
+1R
+b10 p
+02
+11
+b11 q
+b10 m
+b11 o
+#460000
+0!
+0R
+#470000
+1!
+1R
+b10 l
+b11 n
+b11 p
+12
+1J
+1>
+0.
+1-
+b10010 k
+b100 q
+0)
+#480000
+0!
+0R
+#490000
+1!
+1R
+b100 p
+02
+01
+10
+b101 q
+b1 m
+b0 q
+#500000
+0!
+0R
+#510000
+1!
+1R
+b1 l
+b0 p
+00
+1.
+0-
+b11010 k
+b1 q
+1)
+#520000
+0!
+0R
+#530000
+1!
+1R
+b1 p
+12
+b10 q
+#540000
+0!
+0R
+#550000
+1!
+1R
+b10 p
+02
+11
+b11 q
+b10 m
+b100 o
+#560000
+0!
+0R
+#570000
+1!
+1R
+b10 l
+b100 n
+b11 p
+12
+0J
+0I
+1H
+0>
+0=
+1<
+0.
+1-
+b10010 k
+b100 q
+0)
+#580000
+0!
+0R
+#590000
+1!
+1R
+b100 p
+02
+01
+10
+b101 q
+b11 m
+1s
+#600000
+0!
+0R
+#610000
+1!
+1R
+b11 l
+b101 p
+1r
+12
+1.
+1'
+b0 k
+b0 o
+b0 q
+b0 m
+0s
+0+
+0(
+#620000
+0!
+0R
+#630000
+1!
+1R
+b0 l
+b0 n
+b0 p
+0r
+02
+00
+0H
+0<
+0.
+0-
+0'
+#640000
+0!
+0R

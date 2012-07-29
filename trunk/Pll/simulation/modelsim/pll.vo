@@ -1,0 +1,255 @@
+// Copyright (C) 1991-2010 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus II"
+// VERSION "Version 10.0 Build 218 06/27/2010 SJ Full Version"
+
+// DATE "05/05/2012 13:58:11"
+
+// 
+// Device: Altera EP2C35F672C6 Package FBGA672
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module pll (
+	inclk0,
+	c0,
+	locked);
+input 	inclk0;
+output 	c0;
+output 	locked;
+
+// Design Ports Information
+// c0	=>  Location: PIN_AA7,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// locked	=>  Location: PIN_AF4,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// inclk0	=>  Location: PIN_N2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+// synopsys translate_off
+initial $sdf_annotate("pll_v.sdo");
+// synopsys translate_on
+
+wire \altpll_component|pll~CLK1 ;
+wire \altpll_component|pll~CLK2 ;
+wire \inclk0~combout ;
+wire \altpll_component|_clk0 ;
+wire \altpll_component|_clk0~clkctrl_e_outclk ;
+wire \altpll_component|_locked ;
+
+wire [2:0] \altpll_component|pll_CLK_bus ;
+
+assign \altpll_component|_clk0  = \altpll_component|pll_CLK_bus [0];
+assign \altpll_component|pll~CLK1  = \altpll_component|pll_CLK_bus [1];
+assign \altpll_component|pll~CLK2  = \altpll_component|pll_CLK_bus [2];
+
+// Location: PIN_N2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+cycloneii_io \inclk0~I (
+	.datain(gnd),
+	.oe(gnd),
+	.outclk(gnd),
+	.outclkena(vcc),
+	.inclk(gnd),
+	.inclkena(vcc),
+	.areset(gnd),
+	.sreset(gnd),
+	.differentialin(gnd),
+	.linkin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(\inclk0~combout ),
+	.regout(),
+	.differentialout(),
+	.linkout(),
+	.padio(inclk0));
+// synopsys translate_off
+defparam \inclk0~I .input_async_reset = "none";
+defparam \inclk0~I .input_power_up = "low";
+defparam \inclk0~I .input_register_mode = "none";
+defparam \inclk0~I .input_sync_reset = "none";
+defparam \inclk0~I .oe_async_reset = "none";
+defparam \inclk0~I .oe_power_up = "low";
+defparam \inclk0~I .oe_register_mode = "none";
+defparam \inclk0~I .oe_sync_reset = "none";
+defparam \inclk0~I .operation_mode = "input";
+defparam \inclk0~I .output_async_reset = "none";
+defparam \inclk0~I .output_power_up = "low";
+defparam \inclk0~I .output_register_mode = "none";
+defparam \inclk0~I .output_sync_reset = "none";
+// synopsys translate_on
+
+// Location: PLL_1
+cycloneii_pll \altpll_component|pll (
+	.ena(vcc),
+	.clkswitch(gnd),
+	.areset(gnd),
+	.pfdena(vcc),
+	.testclearlock(gnd),
+	.sbdin(gnd),
+	.inclk({gnd,\inclk0~combout }),
+	.locked(\altpll_component|_locked ),
+	.testupout(),
+	.testdownout(),
+	.sbdout(),
+	.clk(\altpll_component|pll_CLK_bus ));
+// synopsys translate_off
+defparam \altpll_component|pll .bandwidth = 0;
+defparam \altpll_component|pll .bandwidth_type = "low";
+defparam \altpll_component|pll .c0_mode = "bypass";
+defparam \altpll_component|pll .c0_ph = 0;
+defparam \altpll_component|pll .c1_mode = "bypass";
+defparam \altpll_component|pll .c1_ph = 0;
+defparam \altpll_component|pll .c2_high = 2;
+defparam \altpll_component|pll .c2_initial = 1;
+defparam \altpll_component|pll .c2_low = 2;
+defparam \altpll_component|pll .c2_mode = "even";
+defparam \altpll_component|pll .c2_ph = 0;
+defparam \altpll_component|pll .charge_pump_current = 80;
+defparam \altpll_component|pll .clk0_counter = "c2";
+defparam \altpll_component|pll .clk0_divide_by = 1;
+defparam \altpll_component|pll .clk0_duty_cycle = 50;
+defparam \altpll_component|pll .clk0_multiply_by = 4;
+defparam \altpll_component|pll .clk0_phase_shift = "0";
+defparam \altpll_component|pll .clk1_duty_cycle = 50;
+defparam \altpll_component|pll .clk1_phase_shift = "0";
+defparam \altpll_component|pll .clk2_duty_cycle = 50;
+defparam \altpll_component|pll .clk2_phase_shift = "0";
+defparam \altpll_component|pll .compensate_clock = "clk0";
+defparam \altpll_component|pll .gate_lock_counter = 0;
+defparam \altpll_component|pll .gate_lock_signal = "no";
+defparam \altpll_component|pll .inclk0_input_frequency = 20000;
+defparam \altpll_component|pll .inclk1_input_frequency = 20000;
+defparam \altpll_component|pll .invalid_lock_multiplier = 5;
+defparam \altpll_component|pll .loop_filter_c = 3;
+defparam \altpll_component|pll .loop_filter_r = " 2.500000";
+defparam \altpll_component|pll .m = 16;
+defparam \altpll_component|pll .m_initial = 1;
+defparam \altpll_component|pll .m_ph = 0;
+defparam \altpll_component|pll .n = 1;
+defparam \altpll_component|pll .operation_mode = "normal";
+defparam \altpll_component|pll .pfd_max = 100000;
+defparam \altpll_component|pll .pfd_min = 2484;
+defparam \altpll_component|pll .pll_compensation_delay = 5370;
+defparam \altpll_component|pll .self_reset_on_gated_loss_lock = "off";
+defparam \altpll_component|pll .sim_gate_lock_device_behavior = "off";
+defparam \altpll_component|pll .simulation_type = "timing";
+defparam \altpll_component|pll .valid_lock_multiplier = 1;
+defparam \altpll_component|pll .vco_center = 1333;
+defparam \altpll_component|pll .vco_max = 2000;
+defparam \altpll_component|pll .vco_min = 1000;
+// synopsys translate_on
+
+// Location: CLKCTRL_X0_Y1_N1
+cycloneii_clkctrl \altpll_component|_clk0~clkctrl_e (
+	.ena(vcc),
+	.inclk({gnd,gnd,gnd,\altpll_component|_clk0 }),
+	.clkselect(2'b00),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.outclk(\altpll_component|_clk0~clkctrl_e_outclk ));
+// synopsys translate_off
+defparam \altpll_component|_clk0~clkctrl_e .clock_type = "external clock output";
+defparam \altpll_component|_clk0~clkctrl_e .ena_register_mode = "none";
+// synopsys translate_on
+
+// Location: PIN_AA7,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+cycloneii_io \c0~I (
+	.datain(\altpll_component|_clk0~clkctrl_e_outclk ),
+	.oe(vcc),
+	.outclk(gnd),
+	.outclkena(vcc),
+	.inclk(gnd),
+	.inclkena(vcc),
+	.areset(gnd),
+	.sreset(gnd),
+	.differentialin(gnd),
+	.linkin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(),
+	.regout(),
+	.differentialout(),
+	.linkout(),
+	.padio(c0));
+// synopsys translate_off
+defparam \c0~I .input_async_reset = "none";
+defparam \c0~I .input_power_up = "low";
+defparam \c0~I .input_register_mode = "none";
+defparam \c0~I .input_sync_reset = "none";
+defparam \c0~I .oe_async_reset = "none";
+defparam \c0~I .oe_power_up = "low";
+defparam \c0~I .oe_register_mode = "none";
+defparam \c0~I .oe_sync_reset = "none";
+defparam \c0~I .operation_mode = "output";
+defparam \c0~I .output_async_reset = "none";
+defparam \c0~I .output_power_up = "low";
+defparam \c0~I .output_register_mode = "none";
+defparam \c0~I .output_sync_reset = "none";
+// synopsys translate_on
+
+// Location: PIN_AF4,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+cycloneii_io \locked~I (
+	.datain(\altpll_component|_locked ),
+	.oe(vcc),
+	.outclk(gnd),
+	.outclkena(vcc),
+	.inclk(gnd),
+	.inclkena(vcc),
+	.areset(gnd),
+	.sreset(gnd),
+	.differentialin(gnd),
+	.linkin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(),
+	.regout(),
+	.differentialout(),
+	.linkout(),
+	.padio(locked));
+// synopsys translate_off
+defparam \locked~I .input_async_reset = "none";
+defparam \locked~I .input_power_up = "low";
+defparam \locked~I .input_register_mode = "none";
+defparam \locked~I .input_sync_reset = "none";
+defparam \locked~I .oe_async_reset = "none";
+defparam \locked~I .oe_power_up = "low";
+defparam \locked~I .oe_register_mode = "none";
+defparam \locked~I .oe_sync_reset = "none";
+defparam \locked~I .operation_mode = "output";
+defparam \locked~I .output_async_reset = "none";
+defparam \locked~I .output_power_up = "low";
+defparam \locked~I .output_register_mode = "none";
+defparam \locked~I .output_sync_reset = "none";
+// synopsys translate_on
+
+endmodule

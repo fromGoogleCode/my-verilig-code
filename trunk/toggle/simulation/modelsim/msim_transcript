@@ -1,0 +1,80 @@
+# Reading C:/altera/10.0/modelsim_ae/tcl/vsim/pref.tcl 
+# do toggle_run_msim_gate_verilog.do 
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Copying C:\altera\10.0\modelsim_ae\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\10.0\modelsim_ae\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+. {toggle.vo}
+# Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
+# -- Compiling module toggle
+# 
+# Top level modules:
+# 	toggle
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/albert/Documents/Quartus_workspace/toggle {C:/Users/albert/Documents/Quartus_workspace/toggle/my_toggle_tb.v}
+# Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
+# -- Compiling module my_toggle_tb
+# 
+# Top level modules:
+# 	my_toggle_tb
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L cycloneii_ver -L gate_work -L work -voptargs="+acc" my_toggle_tb
+# vsim +transport_int_delays +transport_path_delays -L cycloneii_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps my_toggle_tb 
+# //  ModelSim ALTERA 6.5e Feb 27 2010 
+# //
+# //  Copyright 1991-2010 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading work.my_toggle_tb
+# Loading work.toggle
+# Loading cycloneii_ver.cycloneii_lcell_comb
+# Loading cycloneii_ver.cycloneii_io
+# Loading cycloneii_ver.cycloneii_mux21
+# Loading cycloneii_ver.cycloneii_dffe
+# Loading cycloneii_ver.cycloneii_asynch_io
+# Loading cycloneii_ver.cycloneii_pll
+# Loading cycloneii_ver.cycloneii_pll_reg
+# Loading cycloneii_ver.cycloneii_m_cntr
+# Loading cycloneii_ver.cycloneii_n_cntr
+# Loading cycloneii_ver.cycloneii_scale_cntr
+# Loading cycloneii_ver.cycloneii_clkctrl
+# Loading cycloneii_ver.cycloneii_mux41
+# Loading cycloneii_ver.cycloneii_ena_reg
+# Loading cycloneii_ver.cycloneii_lcell_ff
+# SDF 6.5e Compiler 2010.02 Feb 27 2010
+# 
+# Loading instances from toggle_v.sdo
+# Loading cycloneii_ver.CYCLONEII_PRIM_DFFE
+# Loading timing data from toggle_v.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Region: /my_toggle_tb  File: C:/Users/albert/Documents/Quartus_workspace/toggle/my_toggle_tb.v
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body
+# run -all
+#                    0 <<BLOCK 0: Starting the Simulation >>
+#  Note : CycloneII PLL is enabled
+# Time: 0  Instance: my_toggle_tb.toggle.\pll|altpll_component|pll 
+# Warning : Invalid transition to 'X' detected on CycloneII PLL input clk. This edge will be ignored.
+# Time: 0  Instance: my_toggle_tb.toggle.\pll|altpll_component|pll .n1
+#  Note : CycloneII PLL locked to incoming clock
+# Time: 113012  Instance: my_toggle_tb.toggle.\pll|altpll_component|pll 
+#                  146 <<  run 1 >>
+#                 1000 <<BLOCK 0: Simulation Complete >>
+# Break in Module my_toggle_tb at C:/Users/albert/Documents/Quartus_workspace/toggle/my_toggle_tb.v line 73
+# Simulation Breakpoint: Break in Module my_toggle_tb at C:/Users/albert/Documents/Quartus_workspace/toggle/my_toggle_tb.v line 73
+# MACRO ./toggle_run_msim_gate_verilog.do PAUSED at line 17

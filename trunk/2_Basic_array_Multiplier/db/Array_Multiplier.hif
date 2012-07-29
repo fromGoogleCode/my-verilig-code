@@ -1,0 +1,374 @@
+Quartus II 32-bit
+Version 11.1 Build 216 11/23/2011 Service Pack 1 SJ Web Edition
+14
+5116
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+Arrary_Mutiplier
+# storage
+db|Array_Multiplier.(0).cnf
+db|Array_Multiplier.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+|users|albert|dropbox|coding_zone|verilog|ece342_computer_hardware_lab|lab_2|basic array multiplier|arrary_mutiplier.v
+684df0134dff2b22efcc7ece33ab4
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+n
+8
+PARAMETER_SIGNED_DEC
+DEF
+m
+16
+PARAMETER_SIGNED_DEC
+DEF
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+booth_encode
+# storage
+db|Array_Multiplier.(1).cnf
+db|Array_Multiplier.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+|users|albert|dropbox|coding_zone|verilog|ece342_computer_hardware_lab|lab_2|basic array multiplier|booth_encode.v
+f5a9ad621c23976b7cc92e9b0d496c4
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+n
+8
+PARAMETER_SIGNED_DEC
+DEF
+}
+# hierarchies {
+booth_encode:BE
+}
+# macro_sequence
+
+# end
+# entity
+add_input
+# storage
+db|Array_Multiplier.(2).cnf
+db|Array_Multiplier.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+|users|albert|dropbox|coding_zone|verilog|ece342_computer_hardware_lab|lab_2|basic array multiplier|add_input.v
+a456558f4c63e42b7560e9d6b2ff35d
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+n
+8
+PARAMETER_SIGNED_DEC
+DEF
+}
+# hierarchies {
+add_input:row_1
+add_input:row_2
+add_input:row_3
+add_input:row_4
+add_input:row_5
+add_input:row_6
+add_input:row_7
+add_input:row_8
+}
+# macro_sequence
+
+# end
+# entity
+ripple_g
+# storage
+db|Array_Multiplier.(3).cnf
+db|Array_Multiplier.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+|users|albert|dropbox|coding_zone|verilog|ece342_computer_hardware_lab|lab_2|basic array multiplier|ripple_g.v
+4874817d112ccfbc48ac04884d91cbb
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+n
+16
+PARAMETER_SIGNED_DEC
+DEF
+}
+# hierarchies {
+ripple_g:row1
+ripple_g:row2
+ripple_g:row3
+ripple_g:row4
+ripple_g:row5
+ripple_g:row6
+ripple_g:row7
+ripple_g:row8
+}
+# macro_sequence
+
+# end
+# entity
+fulladd
+# storage
+db|Array_Multiplier.(4).cnf
+db|Array_Multiplier.(4).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+|users|albert|dropbox|coding_zone|verilog|ece342_computer_hardware_lab|lab_2|basic array multiplier|fulladd.v
+b11695a315b2b14e714be840e2f0b495
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+ripple_g:row1|fulladd:addbit[0].stage
+ripple_g:row1|fulladd:addbit[1].stage
+ripple_g:row1|fulladd:addbit[2].stage
+ripple_g:row1|fulladd:addbit[3].stage
+ripple_g:row1|fulladd:addbit[4].stage
+ripple_g:row1|fulladd:addbit[5].stage
+ripple_g:row1|fulladd:addbit[6].stage
+ripple_g:row1|fulladd:addbit[7].stage
+ripple_g:row1|fulladd:addbit[8].stage
+ripple_g:row1|fulladd:addbit[9].stage
+ripple_g:row1|fulladd:addbit[10].stage
+ripple_g:row1|fulladd:addbit[11].stage
+ripple_g:row1|fulladd:addbit[12].stage
+ripple_g:row1|fulladd:addbit[13].stage
+ripple_g:row1|fulladd:addbit[14].stage
+ripple_g:row1|fulladd:addbit[15].stage
+ripple_g:row2|fulladd:addbit[0].stage
+ripple_g:row2|fulladd:addbit[1].stage
+ripple_g:row2|fulladd:addbit[2].stage
+ripple_g:row2|fulladd:addbit[3].stage
+ripple_g:row2|fulladd:addbit[4].stage
+ripple_g:row2|fulladd:addbit[5].stage
+ripple_g:row2|fulladd:addbit[6].stage
+ripple_g:row2|fulladd:addbit[7].stage
+ripple_g:row2|fulladd:addbit[8].stage
+ripple_g:row2|fulladd:addbit[9].stage
+ripple_g:row2|fulladd:addbit[10].stage
+ripple_g:row2|fulladd:addbit[11].stage
+ripple_g:row2|fulladd:addbit[12].stage
+ripple_g:row2|fulladd:addbit[13].stage
+ripple_g:row2|fulladd:addbit[14].stage
+ripple_g:row2|fulladd:addbit[15].stage
+ripple_g:row3|fulladd:addbit[0].stage
+ripple_g:row3|fulladd:addbit[1].stage
+ripple_g:row3|fulladd:addbit[2].stage
+ripple_g:row3|fulladd:addbit[3].stage
+ripple_g:row3|fulladd:addbit[4].stage
+ripple_g:row3|fulladd:addbit[5].stage
+ripple_g:row3|fulladd:addbit[6].stage
+ripple_g:row3|fulladd:addbit[7].stage
+ripple_g:row3|fulladd:addbit[8].stage
+ripple_g:row3|fulladd:addbit[9].stage
+ripple_g:row3|fulladd:addbit[10].stage
+ripple_g:row3|fulladd:addbit[11].stage
+ripple_g:row3|fulladd:addbit[12].stage
+ripple_g:row3|fulladd:addbit[13].stage
+ripple_g:row3|fulladd:addbit[14].stage
+ripple_g:row3|fulladd:addbit[15].stage
+ripple_g:row4|fulladd:addbit[0].stage
+ripple_g:row4|fulladd:addbit[1].stage
+ripple_g:row4|fulladd:addbit[2].stage
+ripple_g:row4|fulladd:addbit[3].stage
+ripple_g:row4|fulladd:addbit[4].stage
+ripple_g:row4|fulladd:addbit[5].stage
+ripple_g:row4|fulladd:addbit[6].stage
+ripple_g:row4|fulladd:addbit[7].stage
+ripple_g:row4|fulladd:addbit[8].stage
+ripple_g:row4|fulladd:addbit[9].stage
+ripple_g:row4|fulladd:addbit[10].stage
+ripple_g:row4|fulladd:addbit[11].stage
+ripple_g:row4|fulladd:addbit[12].stage
+ripple_g:row4|fulladd:addbit[13].stage
+ripple_g:row4|fulladd:addbit[14].stage
+ripple_g:row4|fulladd:addbit[15].stage
+ripple_g:row5|fulladd:addbit[0].stage
+ripple_g:row5|fulladd:addbit[1].stage
+ripple_g:row5|fulladd:addbit[2].stage
+ripple_g:row5|fulladd:addbit[3].stage
+ripple_g:row5|fulladd:addbit[4].stage
+ripple_g:row5|fulladd:addbit[5].stage
+ripple_g:row5|fulladd:addbit[6].stage
+ripple_g:row5|fulladd:addbit[7].stage
+ripple_g:row5|fulladd:addbit[8].stage
+ripple_g:row5|fulladd:addbit[9].stage
+ripple_g:row5|fulladd:addbit[10].stage
+ripple_g:row5|fulladd:addbit[11].stage
+ripple_g:row5|fulladd:addbit[12].stage
+ripple_g:row5|fulladd:addbit[13].stage
+ripple_g:row5|fulladd:addbit[14].stage
+ripple_g:row5|fulladd:addbit[15].stage
+ripple_g:row6|fulladd:addbit[0].stage
+ripple_g:row6|fulladd:addbit[1].stage
+ripple_g:row6|fulladd:addbit[2].stage
+ripple_g:row6|fulladd:addbit[3].stage
+ripple_g:row6|fulladd:addbit[4].stage
+ripple_g:row6|fulladd:addbit[5].stage
+ripple_g:row6|fulladd:addbit[6].stage
+ripple_g:row6|fulladd:addbit[7].stage
+ripple_g:row6|fulladd:addbit[8].stage
+ripple_g:row6|fulladd:addbit[9].stage
+ripple_g:row6|fulladd:addbit[10].stage
+ripple_g:row6|fulladd:addbit[11].stage
+ripple_g:row6|fulladd:addbit[12].stage
+ripple_g:row6|fulladd:addbit[13].stage
+ripple_g:row6|fulladd:addbit[14].stage
+ripple_g:row6|fulladd:addbit[15].stage
+ripple_g:row7|fulladd:addbit[0].stage
+ripple_g:row7|fulladd:addbit[1].stage
+ripple_g:row7|fulladd:addbit[2].stage
+ripple_g:row7|fulladd:addbit[3].stage
+ripple_g:row7|fulladd:addbit[4].stage
+ripple_g:row7|fulladd:addbit[5].stage
+ripple_g:row7|fulladd:addbit[6].stage
+ripple_g:row7|fulladd:addbit[7].stage
+ripple_g:row7|fulladd:addbit[8].stage
+ripple_g:row7|fulladd:addbit[9].stage
+ripple_g:row7|fulladd:addbit[10].stage
+ripple_g:row7|fulladd:addbit[11].stage
+ripple_g:row7|fulladd:addbit[12].stage
+ripple_g:row7|fulladd:addbit[13].stage
+ripple_g:row7|fulladd:addbit[14].stage
+ripple_g:row7|fulladd:addbit[15].stage
+ripple_g:row8|fulladd:addbit[0].stage
+ripple_g:row8|fulladd:addbit[1].stage
+ripple_g:row8|fulladd:addbit[2].stage
+ripple_g:row8|fulladd:addbit[3].stage
+ripple_g:row8|fulladd:addbit[4].stage
+ripple_g:row8|fulladd:addbit[5].stage
+ripple_g:row8|fulladd:addbit[6].stage
+ripple_g:row8|fulladd:addbit[7].stage
+ripple_g:row8|fulladd:addbit[8].stage
+ripple_g:row8|fulladd:addbit[9].stage
+ripple_g:row8|fulladd:addbit[10].stage
+ripple_g:row8|fulladd:addbit[11].stage
+ripple_g:row8|fulladd:addbit[12].stage
+ripple_g:row8|fulladd:addbit[13].stage
+ripple_g:row8|fulladd:addbit[14].stage
+ripple_g:row8|fulladd:addbit[15].stage
+}
+# macro_sequence
+
+# end
+# complete
+

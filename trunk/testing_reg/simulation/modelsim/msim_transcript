@@ -1,0 +1,55 @@
+# Reading C:/altera/10.0/modelsim_ae/tcl/vsim/pref.tcl 
+# do testing_reg_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\10.0\modelsim_ae\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\10.0\modelsim_ae\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/albert/Documents/Quartus_workspace/testing_reg {C:/Users/albert/Documents/Quartus_workspace/testing_reg/testing_reg.v}
+# Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
+# -- Compiling module testing_reg
+# 
+# Top level modules:
+# 	testing_reg
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/albert/Documents/Quartus_workspace/testing_reg {C:/Users/albert/Documents/Quartus_workspace/testing_reg/testing_reg_tb.v}
+# Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
+# -- Compiling module testing_reg_tb
+# 
+# Top level modules:
+# 	testing_reg_tb
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc" testing_reg_tb
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L cycloneii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps testing_reg_tb 
+# //  ModelSim ALTERA 6.5e Feb 27 2010 
+# //
+# //  Copyright 1991-2010 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading work.testing_reg_tb
+# Loading work.testing_reg
+# ** Warning: (vsim-3009) [TSCALE] - Module 'testing_reg' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /testing_reg_tb/testing_reg
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body
+# run -all
+#                    0 <<BLOCK 0: Starting the Simulation >>
+#                   55 <<  run 1 >>
+#                  500 <<BLOCK 0: Simulation Complete >>
+# Break in Module testing_reg_tb at C:/Users/albert/Documents/Quartus_workspace/testing_reg/testing_reg_tb.v line 50
+# Simulation Breakpoint: Break in Module testing_reg_tb at C:/Users/albert/Documents/Quartus_workspace/testing_reg/testing_reg_tb.v line 50
+# MACRO ./testing_reg_run_msim_rtl_verilog.do PAUSED at line 17

@@ -1,0 +1,35 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\albert\Documents\Quartus_workspace\Pll\simulation\modelsim
+vmy_pll_tb
+!s100 fcoZV[be]V5QM80@3e5Kj3
+I@_f06Kli=ToB=GaCBg;Yk1
+VbEG`30[Z7go1_9j<=HLUY0
+w1336016051
+8C:/Users/albert/Documents/Quartus_workspace/Pll/my_pll_tb.v
+FC:/Users/albert/Documents/Quartus_workspace/Pll/my_pll_tb.v
+L0 9
+Z1 OV;L;6.5e;42
+r1
+!s85 0
+31
+!s101 -O0
+Z2 o-vlog01compat -work work -O0
+Z3 !s92 -vlog01compat -work work +incdir+C:/Users/albert/Documents/Quartus_workspace/Pll -O0
+vpll
+I_BNBH97QSS4Bdi7jd7M>c2
+V[PnaR_FLzVi3KU;W^`bE_1
+w1336018906
+8C:/Users/albert/Documents/Quartus_workspace/Pll/pll.v
+FC:/Users/albert/Documents/Quartus_workspace/Pll/pll.v
+L0 39
+R1
+r1
+31
+R2
+!s100 _`KB:6=c5_?2A5KFVAO>T1
+!s85 0
+!s101 -O0
+R3

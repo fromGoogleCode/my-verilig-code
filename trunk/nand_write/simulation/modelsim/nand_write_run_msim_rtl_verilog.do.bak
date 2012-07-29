@@ -1,0 +1,11 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+C:/Users/albert/Documents/Quartus_workspace/nand_write {C:/Users/albert/Documents/Quartus_workspace/nand_write/toggle.v}
+vlog -vlog01compat -work work +incdir+C:/Users/albert/Documents/Quartus_workspace/nand_write {C:/Users/albert/Documents/Quartus_workspace/nand_write/nand_write.v}
+vlog -vlog01compat -work work +incdir+C:/Users/albert/Documents/Quartus_workspace/nand_write {C:/Users/albert/Documents/Quartus_workspace/nand_write/pll.v}
+

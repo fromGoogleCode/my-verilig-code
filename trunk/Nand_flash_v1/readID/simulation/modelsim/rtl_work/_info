@@ -1,0 +1,52 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\albert\Google Drive\Coding_zone\Verilog\Quartus_workspace\Nand_flash_v1\readID\simulation\modelsim
+vreadID
+Ih<T3G37TN876Z4F0N9]z>0
+VmAR9iz]ORUHfeURjFzj`N1
+w1343537721
+8C:/Users/albert/Google Drive/Coding_zone/Verilog/Quartus_workspace/Nand_flash_v1/readID/readID.v
+FC:/Users/albert/Google Drive/Coding_zone/Verilog/Quartus_workspace/Nand_flash_v1/readID/readID.v
+L0 12
+Z1 OV;L;6.5e;42
+r1
+31
+Z2 o-vlog01compat -work work -O0
+nread@i@d
+!s100 4QAd:4Xgmo<dCCnRW9CDc0
+!s85 0
+!s101 -O0
+Z3 !s92 -vlog01compat -work work {+incdir+C:/Users/albert/Google Drive/Coding_zone/Verilog/Quartus_workspace/Nand_flash_v1/readID} -O0
+vreadID_tb
+!s100 ?GXkBSzA[^8dX[cBTYVOS2
+IKbkN0TYeFlLJlBnS>FV7g3
+V7nIIJgVAKa:hFl@?M@dXZ2
+w1343537948
+8C:/Users/albert/Google Drive/Coding_zone/Verilog/Quartus_workspace/Nand_flash_v1/readID/readID_tb.v
+FC:/Users/albert/Google Drive/Coding_zone/Verilog/Quartus_workspace/Nand_flash_v1/readID/readID_tb.v
+L0 15
+R1
+r1
+!s85 0
+31
+!s101 -O0
+R2
+R3
+nread@i@d_tb
+vtoggle
+IDcILa;?O0TGzacmTDoGS50
+VbX1F7GjkNczlV>55PIocn3
+w1343530687
+8C:/Users/albert/Google Drive/Coding_zone/Verilog/Quartus_workspace/Nand_flash_v1/toggle/toggle.v
+FC:/Users/albert/Google Drive/Coding_zone/Verilog/Quartus_workspace/Nand_flash_v1/toggle/toggle.v
+L0 14
+R1
+r1
+31
+R2
+!s100 F42NCZk44EFnAhE]KOK2h0
+!s85 0
+!s101 -O0
+!s92 -vlog01compat -work work {+incdir+C:/Users/albert/Google Drive/Coding_zone/Verilog/Quartus_workspace/Nand_flash_v1/toggle} -O0

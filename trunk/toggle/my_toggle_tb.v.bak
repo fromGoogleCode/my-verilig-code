@@ -1,0 +1,100 @@
+//-------------------------------------------------
+// File: my_toggle_tb.v
+// Purpose:  Test Bench
+//         
+//-----------------------------------------------------------
+//Time scale
+`timescale 1 ns /  1 ps
+
+module my_toggle_tb ();
+  //---------------------------------------------------------
+  // inputs to the DUT are reg type
+     reg CLOCK_200,reset,enable;
+     reg [11:0] cntUPTO;
+     reg [4:0] outputVEC1,outputVEC2; 
+  //--------------------------------------------------------
+  // outputs from the DUT are wire type
+     wire  done;
+     wire  [4:0]outputVEC;
+	  
+  //---------------------------------------------------------
+  // instantiate the Device Under Test (DUT)
+  // using named instantiation
+  toggle toggle ( 
+            .clk(CLOCK_200),
+            .reset(reset),
+            .enable(enable),
+            .cntUPTO(cntUPTO),
+            .outputVEC1(outputVEC1),
+            .outputVEC2(outputVEC2),
+            .done(done),
+            .outputVEC(outputVEC)
+           );
+  //----------------------------------------------------------
+  // create a 200MHZ clock
+  always
+    #10 CLOCK_200 = ~CLOCK_200;   // every 5 nanoseconds invert
+  //-----------------------------------------------------------
+  /*****************************************************************************
+ 	*                  BLOCK 0 -> Reset check                                    *
+ 	*****************************************************************************/
+  // initial blocks are sequential and start at time 0
+  initial
+  begin
+    $display($time, " <<BLOCK 0: Starting the Simulation >>");                                                   
+    // at time 0 reset input value
+	 CLOCK_200 = 0; 
+	 reset=0;
+	 enable =0;
+	 cntUPTO =0;
+	 outputVEC1 = 0;
+	 outputVEC2 = 0;
+	 //#5 reset = 1;
+	 #15 reset = 0;
+    #700;
+    // let the simulation run for 500ns
+    $display($time, " <<BLOCK 0: Simulation Complete >>");
+    $stop;
+  end
+ /*****************************************************************************
+ 	*                  BLOCK 1 -> FSM and Logic test                            *
+ 	*****************************************************************************/
+ // This initial block runs concurrently with the other
+ // blocks in the design and starts at time 0
+  initial 
+  begin
+      // $monitor will print whenever a signal changes in the design
+	$monitor($time, "State change: state_reg_tb=%b, outputVEC=%b ", state_reg_tb,outputVEC);
+	$monitor($time, "Counter Values: internalCNT_reg_tb=%d ,delayCNT_reg_tb=%d" ,internalCNT_reg_tb,delayCNT_reg_tb );
+	$monitor($time, "Process done: done=%b", done);
+  end
+  /*****************************************************************************
+ 	*                  BLOCK 1 -> FSM and Logic test                            *
+ 	*****************************************************************************/
+  //integer i;
+  initial 
+  begin
+    //for(i=0;i<10;i=i+1)
+	//begin
+    #30; //wait for 40ns
+	 //initial input
+	 $display($time, " <<  run 1 >>");
+	 enable = 1;
+	 cntUPTO =1;
+	 outputVEC1 = 5'b10010;
+	 outputVEC2 = 5'b11010;
+    
+	 wait (done==1)
+	 enable=0;
+	 #30
+	 enable = 1;
+	 cntUPTO =4;
+	 outputVEC1 = 5'b11010;
+	 outputVEC2 = 5'b10010;
+	 wait (done==1)
+	 enable=0;
+    
+	//end
+  end
+endmodule 
+ 

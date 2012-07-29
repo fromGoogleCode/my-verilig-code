@@ -1,0 +1,119 @@
+# Reading C:/altera/10.0/modelsim_ae/tcl/vsim/pref.tcl 
+# do toggle_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\10.0\modelsim_ae\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\10.0\modelsim_ae\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/albert/Google\ Drive/Coding_zone/Verilog/Quartus_workspace/Nand_flash_v1/toggle {C:/Users/albert/Google Drive/Coding_zone/Verilog/Quartus_workspace/Nand_flash_v1/toggle/toggle.v}
+# Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
+# -- Compiling module toggle
+# 
+# Top level modules:
+# 	toggle
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/albert/Google\ Drive/Coding_zone/Verilog/Quartus_workspace/Nand_flash_v1/toggle {C:/Users/albert/Google Drive/Coding_zone/Verilog/Quartus_workspace/Nand_flash_v1/toggle/my_toggle_tb.v}
+# Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
+# -- Compiling module my_toggle_tb
+# 
+# Top level modules:
+# 	my_toggle_tb
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc" my_toggle_tb
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L cycloneii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps my_toggle_tb 
+# //  ModelSim ALTERA 6.5e Feb 27 2010 
+# //
+# //  Copyright 1991-2010 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading work.my_toggle_tb
+# Loading work.toggle
+# ** Warning: (vsim-3009) [TSCALE] - Module 'toggle' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /my_toggle_tb/toggle
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body
+# run -all
+# 		time=                   0,	clk=0,	enable=0,	State=x,	delay_cnt= x,	internal_cnt=   x,	OUTVEC=xxxxx,	done=x
+# 		time=                  10,	clk=1,	enable=0,	State=0,	delay_cnt= x,	internal_cnt=   x,	OUTVEC=00000,	done=x
+# 		time=                  20,	clk=0,	enable=0,	State=0,	delay_cnt= x,	internal_cnt=   x,	OUTVEC=00000,	done=x
+# 		time=                  30,	clk=1,	enable=0,	State=0,	delay_cnt= 0,	internal_cnt=   0,	OUTVEC=00000,	done=0
+# 		time=                  40,	clk=0,	enable=0,	State=0,	delay_cnt= 0,	internal_cnt=   0,	OUTVEC=00000,	done=0
+# 		Toggle_enable=1,	cntUPTO=   1,	VEC1=10010,	VEC2=11010
+# 		time=                  50,	clk=1,	enable=1,	State=0,	delay_cnt= 0,	internal_cnt=   0,	OUTVEC=00000,	done=0
+# 		time=                  60,	clk=0,	enable=1,	State=0,	delay_cnt= 0,	internal_cnt=   0,	OUTVEC=00000,	done=0
+# 		time=                  70,	clk=1,	enable=0,	State=1,	delay_cnt= 0,	internal_cnt=   0,	OUTVEC=10010,	done=0
+# 		time=                  80,	clk=0,	enable=0,	State=1,	delay_cnt= 0,	internal_cnt=   0,	OUTVEC=10010,	done=0
+# 		time=                  90,	clk=1,	enable=0,	State=1,	delay_cnt= 1,	internal_cnt=   0,	OUTVEC=10010,	done=0
+# 		time=                 100,	clk=0,	enable=0,	State=1,	delay_cnt= 1,	internal_cnt=   0,	OUTVEC=10010,	done=0
+# 		time=                 110,	clk=1,	enable=0,	State=1,	delay_cnt= 2,	internal_cnt=   0,	OUTVEC=10010,	done=0
+# 		time=                 120,	clk=0,	enable=0,	State=1,	delay_cnt= 2,	internal_cnt=   0,	OUTVEC=10010,	done=0
+# 		time=                 130,	clk=1,	enable=0,	State=2,	delay_cnt= 3,	internal_cnt=   1,	OUTVEC=11010,	done=0
+# 		time=                 140,	clk=0,	enable=0,	State=2,	delay_cnt= 3,	internal_cnt=   1,	OUTVEC=11010,	done=0
+# 		time=                 150,	clk=1,	enable=0,	State=2,	delay_cnt= 4,	internal_cnt=   1,	OUTVEC=11010,	done=0
+# 		time=                 160,	clk=0,	enable=0,	State=2,	delay_cnt= 4,	internal_cnt=   1,	OUTVEC=11010,	done=0
+# 		time=                 170,	clk=1,	enable=0,	State=3,	delay_cnt= 5,	internal_cnt=   1,	OUTVEC=00000,	done=1
+# 		time=                 180,	clk=0,	enable=0,	State=3,	delay_cnt= 5,	internal_cnt=   1,	OUTVEC=00000,	done=1
+# 		Toggle_enable=1,	cntUPTO=   4,	VEC1=11010,	VEC2=10010
+# 		time=                 190,	clk=1,	enable=1,	State=0,	delay_cnt= 0,	internal_cnt=   0,	OUTVEC=00000,	done=0
+# 		time=                 200,	clk=0,	enable=1,	State=0,	delay_cnt= 0,	internal_cnt=   0,	OUTVEC=00000,	done=0
+# 		time=                 210,	clk=1,	enable=0,	State=1,	delay_cnt= 0,	internal_cnt=   0,	OUTVEC=11010,	done=0
+# 		time=                 220,	clk=0,	enable=0,	State=1,	delay_cnt= 0,	internal_cnt=   0,	OUTVEC=11010,	done=0
+# 		time=                 230,	clk=1,	enable=0,	State=1,	delay_cnt= 1,	internal_cnt=   0,	OUTVEC=11010,	done=0
+# 		time=                 240,	clk=0,	enable=0,	State=1,	delay_cnt= 1,	internal_cnt=   0,	OUTVEC=11010,	done=0
+# 		time=                 250,	clk=1,	enable=0,	State=1,	delay_cnt= 2,	internal_cnt=   0,	OUTVEC=11010,	done=0
+# 		time=                 260,	clk=0,	enable=0,	State=1,	delay_cnt= 2,	internal_cnt=   0,	OUTVEC=11010,	done=0
+# 		time=                 270,	clk=1,	enable=0,	State=2,	delay_cnt= 3,	internal_cnt=   1,	OUTVEC=10010,	done=0
+# 		time=                 280,	clk=0,	enable=0,	State=2,	delay_cnt= 3,	internal_cnt=   1,	OUTVEC=10010,	done=0
+# 		time=                 290,	clk=1,	enable=0,	State=2,	delay_cnt= 4,	internal_cnt=   1,	OUTVEC=10010,	done=0
+# 		time=                 300,	clk=0,	enable=0,	State=2,	delay_cnt= 4,	internal_cnt=   1,	OUTVEC=10010,	done=0
+# 		time=                 310,	clk=1,	enable=0,	State=1,	delay_cnt= 0,	internal_cnt=   1,	OUTVEC=11010,	done=0
+# 		time=                 320,	clk=0,	enable=0,	State=1,	delay_cnt= 0,	internal_cnt=   1,	OUTVEC=11010,	done=0
+# 		time=                 330,	clk=1,	enable=0,	State=1,	delay_cnt= 1,	internal_cnt=   1,	OUTVEC=11010,	done=0
+# 		time=                 340,	clk=0,	enable=0,	State=1,	delay_cnt= 1,	internal_cnt=   1,	OUTVEC=11010,	done=0
+# 		time=                 350,	clk=1,	enable=0,	State=1,	delay_cnt= 2,	internal_cnt=   1,	OUTVEC=11010,	done=0
+# 		time=                 360,	clk=0,	enable=0,	State=1,	delay_cnt= 2,	internal_cnt=   1,	OUTVEC=11010,	done=0
+# 		time=                 370,	clk=1,	enable=0,	State=2,	delay_cnt= 3,	internal_cnt=   2,	OUTVEC=10010,	done=0
+# 		time=                 380,	clk=0,	enable=0,	State=2,	delay_cnt= 3,	internal_cnt=   2,	OUTVEC=10010,	done=0
+# 		time=                 390,	clk=1,	enable=0,	State=2,	delay_cnt= 4,	internal_cnt=   2,	OUTVEC=10010,	done=0
+# 		time=                 400,	clk=0,	enable=0,	State=2,	delay_cnt= 4,	internal_cnt=   2,	OUTVEC=10010,	done=0
+# 		time=                 410,	clk=1,	enable=0,	State=1,	delay_cnt= 0,	internal_cnt=   2,	OUTVEC=11010,	done=0
+# 		time=                 420,	clk=0,	enable=0,	State=1,	delay_cnt= 0,	internal_cnt=   2,	OUTVEC=11010,	done=0
+# 		time=                 430,	clk=1,	enable=0,	State=1,	delay_cnt= 1,	internal_cnt=   2,	OUTVEC=11010,	done=0
+# 		time=                 440,	clk=0,	enable=0,	State=1,	delay_cnt= 1,	internal_cnt=   2,	OUTVEC=11010,	done=0
+# 		time=                 450,	clk=1,	enable=0,	State=1,	delay_cnt= 2,	internal_cnt=   2,	OUTVEC=11010,	done=0
+# 		time=                 460,	clk=0,	enable=0,	State=1,	delay_cnt= 2,	internal_cnt=   2,	OUTVEC=11010,	done=0
+# 		time=                 470,	clk=1,	enable=0,	State=2,	delay_cnt= 3,	internal_cnt=   3,	OUTVEC=10010,	done=0
+# 		time=                 480,	clk=0,	enable=0,	State=2,	delay_cnt= 3,	internal_cnt=   3,	OUTVEC=10010,	done=0
+# 		time=                 490,	clk=1,	enable=0,	State=2,	delay_cnt= 4,	internal_cnt=   3,	OUTVEC=10010,	done=0
+# 		time=                 500,	clk=0,	enable=0,	State=2,	delay_cnt= 4,	internal_cnt=   3,	OUTVEC=10010,	done=0
+# 		time=                 510,	clk=1,	enable=0,	State=1,	delay_cnt= 0,	internal_cnt=   3,	OUTVEC=11010,	done=0
+# 		time=                 520,	clk=0,	enable=0,	State=1,	delay_cnt= 0,	internal_cnt=   3,	OUTVEC=11010,	done=0
+# 		time=                 530,	clk=1,	enable=0,	State=1,	delay_cnt= 1,	internal_cnt=   3,	OUTVEC=11010,	done=0
+# 		time=                 540,	clk=0,	enable=0,	State=1,	delay_cnt= 1,	internal_cnt=   3,	OUTVEC=11010,	done=0
+# 		time=                 550,	clk=1,	enable=0,	State=1,	delay_cnt= 2,	internal_cnt=   3,	OUTVEC=11010,	done=0
+# 		time=                 560,	clk=0,	enable=0,	State=1,	delay_cnt= 2,	internal_cnt=   3,	OUTVEC=11010,	done=0
+# 		time=                 570,	clk=1,	enable=0,	State=2,	delay_cnt= 3,	internal_cnt=   4,	OUTVEC=10010,	done=0
+# 		time=                 580,	clk=0,	enable=0,	State=2,	delay_cnt= 3,	internal_cnt=   4,	OUTVEC=10010,	done=0
+# 		time=                 590,	clk=1,	enable=0,	State=2,	delay_cnt= 4,	internal_cnt=   4,	OUTVEC=10010,	done=0
+# 		time=                 600,	clk=0,	enable=0,	State=2,	delay_cnt= 4,	internal_cnt=   4,	OUTVEC=10010,	done=0
+# 		time=                 610,	clk=1,	enable=0,	State=3,	delay_cnt= 5,	internal_cnt=   4,	OUTVEC=00000,	done=1
+# 		time=                 620,	clk=0,	enable=0,	State=3,	delay_cnt= 5,	internal_cnt=   4,	OUTVEC=00000,	done=1
+# 		time=                 630,	clk=1,	enable=0,	State=0,	delay_cnt= 0,	internal_cnt=   0,	OUTVEC=00000,	done=0
+# 		time=                 640,	clk=0,	enable=0,	State=0,	delay_cnt= 0,	internal_cnt=   0,	OUTVEC=00000,	done=0
+# Break in Module my_toggle_tb at C:/Users/albert/Google Drive/Coding_zone/Verilog/Quartus_workspace/Nand_flash_v1/toggle/my_toggle_tb.v line 103
+# Simulation Breakpoint: Break in Module my_toggle_tb at C:/Users/albert/Google Drive/Coding_zone/Verilog/Quartus_workspace/Nand_flash_v1/toggle/my_toggle_tb.v line 103
+# MACRO ./toggle_run_msim_rtl_verilog.do PAUSED at line 17
