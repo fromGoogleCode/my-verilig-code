@@ -15,18 +15,18 @@ module toggle
 (
   input wire clk,reset,enable,
   input wire [11:0]cntUPTO,   
-  input wire [4:0] outputVEC1,outputVEC2, //check if we can embedded to a local reg
+  input wire [4:0] setupSignal,holdSignal, //check if we can embedded to a local reg
   output wire done,
   output reg [4:0]outputVEC,
   //output wire pll_locked,   
-  output reg dummy_cnt //@@
+  output reg dummy_cnt/*, 
   
-  /*//TestBench signals below
+  //TestBench signals below
   output wire [1:0]state_tb,
-  output wire clk200_tb,
-  output wire [3:0]delayCNT_tb,
-  output wire [11:0]internalCNT_tb
-  //TestBench signals above*/
+  //output wire clk200_tb,
+  output wire [3:0]delayCNT_tb
+  //TestBench signals above
+  */
   );
   
   /*
@@ -110,7 +110,7 @@ module toggle
 		//
 		  toggle1:
 		    begin
-			outputVEC=outputVEC1;
+			outputVEC=setupSignal;
 			 delayCNT_next=delayCNT_reg+4'd1;
 			  if(delayCNT_next==TOGGEL_SETUP)
 			    begin
@@ -123,7 +123,7 @@ module toggle
 		//
 		  toggle2:
 		    begin
-			 outputVEC=outputVEC2;
+			 outputVEC=holdSignal;
 			  delayCNT_next=delayCNT_reg+4'd1;
 			   if(delayCNT_next== (TOGGEL_SETUP+TOGGEL_HOLD))
 				  begin
@@ -163,8 +163,7 @@ module toggle
 	 assign state_tb=state_reg;
 	 //assign clk200_tb=clk200;
 	 assign delayCNT_tb=delayCNT_reg;
-	 assign internalCNT_tb=internalCNT_reg;
-	 //TestBench signals above*/
-
+	 //TestBench signals above
+    */
 endmodule
 		 

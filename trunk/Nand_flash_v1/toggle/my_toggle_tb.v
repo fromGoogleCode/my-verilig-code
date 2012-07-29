@@ -17,7 +17,7 @@ module my_toggle_tb ();
   // inputs to the DUT are reg type
      reg CLOCK_50,reset,enable;
      reg [11:0] cntUPTO;
-     reg [4:0] outputVEC1,outputVEC2; 
+     reg [4:0] setupSignal,holdSignal; 
   //--------------------------------------------------------
   // outputs from the DUT are wire type
      wire  done;
@@ -26,8 +26,7 @@ module my_toggle_tb ();
 	  wire [1:0]state_tb;
 	  //wire clk200_tb;
 	  wire [3:0]delayCNT_tb;
-	  wire [11:0]internalCNT_tb;
-	  wire [11:0]internalCNT_out;
+	  wire dummy_cnt;
 	  
   //---------------------------------------------------------
   // instantiate the Device Under Test (DUT)
@@ -38,16 +37,15 @@ module my_toggle_tb ();
             .reset(reset),
             .enable(enable),
             .cntUPTO(cntUPTO),
-            .outputVEC1(outputVEC1),
-            .outputVEC2(outputVEC2),
+            .setupSignal(setupSignal),
+            .holdSignal(holdSignal),
             .done(done),
             .outputVEC(outputVEC),
 				//s.locked_out(locked_out),
-				.internalCNT_out(internalCNT_out),
 				.state_tb(state_tb),
-				.clk200_tb(clk200_tb),
+				//.clk200_tb(clk200_tb),
 				.delayCNT_tb(delayCNT_tb),
-				.internalCNT_tb(internalCNT_tb)
+				.dummy_cnt(dummy_cnt)
            );
   //----------------------------------------------------------
   always
@@ -64,8 +62,8 @@ module my_toggle_tb ();
 	 reset=0;
 	 enable =0;
 	 cntUPTO =0;
-	 outputVEC1 = 0;
-	 outputVEC2 = 0;
+	 setupSignal = 0;
+	 holdSignal = 0;
 	 
     #2000;
     // let the simulation run for 500ns
@@ -83,9 +81,9 @@ module my_toggle_tb ();
 	  #50
 	  enable = 1;
 	 cntUPTO =1;
-	 outputVEC1 = 5'b10010;
-	 outputVEC2 = 5'b11010;
-	 $display("\t\tToggle_enable=%b,\tcntUPTO=%d,\tVEC1=%b,\tVEC2=%b",enable,cntUPTO,outputVEC1,outputVEC2); 
+	 setupSignal = 5'b10010;
+	 holdSignal = 5'b11010;
+	 $display("\t\tToggle_enable=%b,\tcntUPTO=%d,\tVEC1=%b,\tVEC2=%b",enable,cntUPTO,setupSignal,holdSignal); 
 	 #20
 	 enable=0;
     
@@ -93,9 +91,9 @@ module my_toggle_tb ();
 	 #20
 	 enable=1;
 	 cntUPTO =4;
-	 outputVEC1 = 5'b11010;
-	 outputVEC2 = 5'b10010;
-	 $display("\t\tToggle_enable=%b,\tcntUPTO=%d,\tVEC1=%b,\tVEC2=%b",enable,cntUPTO,outputVEC1,outputVEC2); 
+	 setupSignal = 5'b11010;
+	 holdSignal = 5'b10010;
+	 $display("\t\tToggle_enable=%b,\tcntUPTO=%d,\tVEC1=%b,\tVEC2=%b",enable,cntUPTO,setupSignal,holdSignal); 
 	 #20
 	 enable=0;
 	 wait(done==1)
@@ -114,7 +112,7 @@ module my_toggle_tb ();
  
   initial 
   begin
-  $monitor("\t\ttime=%d,\tclk=%b,\tenable=%b,\tState=%d,\tdelay_cnt=%d,\tinternal_cnt=%d,\tOUTVEC=%b,\tdone=%b", $time, CLOCK_50,enable,state_tb,delayCNT_tb,internalCNT_out,outputVEC,done);  
+  $monitor("\t\ttime=%d,\tclk=%b,\tenable=%b,\tState=%d,\tdelay_cnt=%d,\tdummy_cnt=%d,\tOUTVEC=%b,\tdone=%b", $time, CLOCK_50,enable,state_tb,delayCNT_tb,dummy_cnt,outputVEC,done);  
   end
   
  
