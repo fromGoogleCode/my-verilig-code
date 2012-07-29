@@ -13,8 +13,9 @@ module readID
 (
   input wire clk,reset,
   output reg IDread_done,
-  output reg [7:0] output_data,
-  input wire [7:0] input_data,
+  output reg [7:0] TonandIO,
+  input wire [7:0] ctrl_in_data,
+  input wire [7:0] nandIOin,
   
   //testbench signals
   output wire toggleDone_tb,dummy_cnt_tb,
@@ -59,8 +60,8 @@ module readID
 	//signal declaration
 	reg [3:0] state_reg, state_next;
 	reg toggle_enable_reg,toggle_enable_next;
-	reg [4:0] outputVEC1,outputVEC1_next; // FORMAT: nCE|CLE|ALE|nRE|nWE
-   reg [4:0] outputVEC2,outputVEC2_next; // FORMAT: nCE|CLE|ALE|nRE|nWE
+	reg [4:0] setupSignal,setupSignal_next; // FORMAT: nCE|CLE|ALE|nRE|nWE
+   reg [4:0] holdSignal,holdSignal_next; // FORMAT: nCE|CLE|ALE|nRE|nWE
    reg [11:0] outputUPTO,outputUPTO_next;
 	reg [1:0] IDread_cnt,IDread_cnt_next;
 	reg [7:0] DevID;
@@ -70,8 +71,8 @@ module readID
   .reset(reset),
   .enable(toggle_enable_reg),   //input for toggle
   .cntUPTO(outputUPTO),    //input for toggle
-  .outputVEC1(outputVEC1), //input for toggle
-  .outputVEC2(outputVEC2), //input for toggle
+  .setupSignal(setupSignal), //input for toggle
+  .holdSignal(holdSignal), //input for toggle
   .done(toggleDone),       
   .outputVEC(outputVEC),
   .dummy_cnt(dummy_cnt)
@@ -83,8 +84,8 @@ module readID
 	  begin
 	     state_reg <= readIDwait;
 		  toggle_enable_reg <=0;
-		  outputVEC1 <= 0;
-        outputVEC2 <= 0;
+		  setupSignal <= 0;
+        holdSignal <= 0;
         outputUPTO <= 0; 
 		  IDread_cnt <= 0;
 	  end
@@ -92,8 +93,8 @@ module readID
 	  begin
 	    state_reg <=state_next;
 		 toggle_enable_reg <=toggle_enable_next;
-		 outputVEC1 <=outputVEC1_next;
-		 outputVEC2 <=outputVEC2_next;
+		 setupSignal <=setupSignal_next;
+		 holdSignal <=holdSignal_next;
 		 outputUPTO <=outputUPTO_next;
        IDread_cnt <=IDread_cnt_next;
 		 
@@ -104,35 +105,35 @@ module readID
 	 begin
 	    state_next=state_reg;
 		 toggle_enable_next=toggle_enable_next;
-		 outputVEC1_next=outputVEC1;
-		 outputVEC2_next=outputVEC2;
+		 setupSignal_next=setupSignal;
+		 holdSignal_next=holdSignal;
 		 outputUPTO_next=outputUPTO;
 
 		case(state_reg)
 		 //
 		  readIDwait:
 		    begin 
-			  if( input_data== CMD )
+			  if( ctrl_in_data== CMD )
 			    begin
 			     state_next=readID;
-				  outputVEC1_next=5'b10010;
-              outputVEC2_next=5'b11010;
+				  setupSignal_next=5'b10010;
+              holdSignal_next=5'b11010;
               outputUPTO_next=1;
-				  output_data=CMD;
+				  TonandIO=CMD;
 				  toggle_enable_next=1;
 				 end
 				else
 				 begin
 				 //avoid inferred latch
-				 outputVEC1_next=0;
-             outputVEC2_next=0;
+				 setupSignal_next=0;
+             holdSignal_next=0;
              outputUPTO_next=0;
 				 //reg reset
 				 toggle_enable_next=0;
 				 IDread_cnt_next=0;
 				 IDread_done=0;
 				 DevID=0;
-				 output_data=0;
+				 TonandIO=0;
 				 end
 			 end
 		//
@@ -141,18 +142,18 @@ module readID
 			  if(toggleDone==1) //@@@@@@@@@@@@
 			    begin
 				  state_next=readIDaddr;
-				  outputVEC1_next=5'b10010;
-              outputVEC2_next=5'b11100;
+				  setupSignal_next=5'b10010;
+              holdSignal_next=5'b11100;
               outputUPTO_next=1;
-				  output_data=0;
+				  TonandIO=0;
 				  toggle_enable_next=1;
 				 end
 			   else
 				 begin
-				 outputVEC1_next=5'b10010;
-             outputVEC2_next=5'b11010;
+				 setupSignal_next=5'b10010;
+             holdSignal_next=5'b11010;
              outputUPTO_next=1;
-				 output_data=CMD;
+				 TonandIO=CMD;
 				 toggle_enable_next=0;
 				 end
 			  end
@@ -162,18 +163,18 @@ module readID
 			  if(toggleDone==1) //@@@@@@@@@@@@
 			    begin
 				   state_next=readIDfour;
-					outputVEC1_next=5'b00001;
-               outputVEC2_next=5'b00000;
+					setupSignal_next=5'b00001;
+               holdSignal_next=5'b00000;
               outputUPTO_next=4;
-				  output_data=0;
+				  TonandIO=0;
 				  toggle_enable_next=1;
 				 end
 			   else
 				 begin
-				 outputVEC1_next=5'b10010;
-              outputVEC2_next=5'b11100;
+				 setupSignal_next=5'b10010;
+              holdSignal_next=5'b11100;
              outputUPTO_next=1;
-				 output_data=0;
+				 TonandIO=0;
 				 toggle_enable_next=0;
 				 end
 			 end
@@ -183,8 +184,8 @@ module readID
 			  if(toggleDone==1) //@@@@@@@@@@@@
 			    begin
 				   state_next=readIDwait;
-					outputVEC1_next=0;
-               outputVEC2_next=0;
+					setupSignal_next=0;
+               holdSignal_next=0;
                outputUPTO_next=0;
 				   IDread_done=1;
 				 end
@@ -193,12 +194,11 @@ module readID
 				 if(dummy_cnt==1)
 				 begin
 				 IDread_cnt_next=IDread_cnt_next+1;
-				 DevID=input_data;
+				 DevID=nandIOin;
 				 end
-				 outputVEC1_next=5'b00001;
-             outputVEC2_next=5'b00000;
+				 setupSignal_next=5'b00001;
+             holdSignal_next=5'b00000;
              outputUPTO_next=4;
-				 output_data=0; //This state is reading the ID, check if need to set to 0
 				 toggle_enable_next=0;
 				 end
 			 end 
